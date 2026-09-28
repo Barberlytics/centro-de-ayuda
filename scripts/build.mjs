@@ -22,7 +22,7 @@ const CONTENT = path.join(ROOT, "content");
 const ASSETS = path.join(ROOT, "assets");
 const DIST = path.join(ROOT, "dist");
 const LOCALE = "es";
-const SITE_URL = process.env.HELP_SITE_URL ?? "https://herramientasubits-hash.github.io/centro-de-ayuda";
+const SITE_URL = process.env.HELP_SITE_URL ?? "https://barberlytics-development.github.io/centro-de-ayuda";
 const APP_URL = process.env.HELP_APP_PUBLIC_URL ?? "https://app.barberlytics.com/ayuda";
 
 const REQUIRED = ["id", "title", "description", "section", "order", "roles", "screens", "keywords", "status", "updated"];
