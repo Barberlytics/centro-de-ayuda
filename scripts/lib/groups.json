@@ -37,7 +37,7 @@
     "Cómo funciona": ["que-es", "que-ve-tu-cliente", "citas-que-crea-el-cliente"],
     "Así reserva tu cliente": ["como-reserva-tu-cliente", "cliente-que-vuelve", "cliente-nuevo", "elegir-sede-servicio-y-barbero", "sin-preferencia-al-reservar", "elegir-fecha-y-hora", "confirmar-la-reserva", "agregar-otra-cita"],
     "Pago y confirmación": ["pagar-la-reserva", "cita-confirmada"],
-    "Llevar la reserva a tus canales": ["enlace-directo-y-utm", "panel-lateral", "abrir-desde-un-enlace", "embebido", "kiosco-front-desk"],
+    "Llevar la reserva a tus canales": ["enlace-directo-y-utm", "panel-lateral", "abrir-desde-un-enlace", "embebido"],
     "Ajustes de la reserva online": ["anticipacion-y-franjas", "aumento-de-precios-por-ocupacion", "tiempos-de-la-lista-de-espera", "metodos-de-pago-de-la-reserva", "cancelar-o-reprogramar-en-linea", "politicas-de-reserva"],
     "Portal del cliente": ["portal-del-cliente-que-es", "portal-del-cliente-en-tu-sitio", "portal-del-cliente-enlace-directo"],
     "Si algo falla": ["no-aparece-un-servicio-o-barbero", "no-hay-horas-disponibles", "mensajes-al-reservar"]

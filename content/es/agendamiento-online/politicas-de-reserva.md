@@ -3,7 +3,7 @@ id: agendamiento-online/politicas-de-reserva
 title: "Las políticas de reserva y cancelación que ve tu cliente"
 description: "El texto de políticas de la reserva online, las etiquetas que se reemplazan solas con tus ajustes de cancelación y cómo adaptarlo a tu barbería."
 section: agendamiento-online
-order: 240
+order: 230
 group: "Ajustes de la reserva online"
 roles: [owner, admin]
 screens: [/online-booking]

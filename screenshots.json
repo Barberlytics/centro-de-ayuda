@@ -4027,28 +4027,6 @@
       "img"
     ]
   },
-  "agendamiento-online/kiosco-front-desk/enlace": {
-    "source": "produccion",
-    "route": "/online-booking",
-    "state": "prod-page",
-    "viewport": "tall",
-    "theme": "light",
-    "clip": "p:text-is(\"Enlace de Front Desk\") >> xpath=ancestor::*[2]",
-    "blur": [
-      "img"
-    ]
-  },
-  "agendamiento-online/kiosco-front-desk/recepcion": {
-    "source": "produccion",
-    "public": true,
-    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
-    "state": "pub-url",
-    "viewport": "desktop",
-    "theme": "light",
-    "blur": [
-      "img"
-    ]
-  },
   "agendamiento-online/portal-del-cliente-que-es/que-puede-hacer": {
     "source": "produccion",
     "route": "/client-portal",

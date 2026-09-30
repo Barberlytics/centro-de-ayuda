@@ -3,7 +3,7 @@ id: agendamiento-online/cancelar-o-reprogramar-en-linea
 title: "Hasta cuándo puede cancelar o reprogramar el cliente en línea"
 description: "Cancelación y reprogramación en línea: el límite de antelación, el cargo por cancelación tardía y el número máximo de cancelaciones en línea."
 section: agendamiento-online
-order: 230
+order: 220
 group: "Ajustes de la reserva online"
 roles: [owner, admin]
 screens: [/online-booking]
