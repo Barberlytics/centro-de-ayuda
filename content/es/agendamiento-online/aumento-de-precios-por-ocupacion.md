@@ -3,7 +3,7 @@ id: agendamiento-online/aumento-de-precios-por-ocupacion
 title: "Aumento de precios cuando la agenda está llena"
 description: "Cómo cobrar un extra por servicio cuando la ocupación de la barbería pasa de un nivel: el Nivel de ocupación y el valor del aumento, en porcentaje o en monto fijo."
 section: agendamiento-online
-order: 200
+order: 190
 group: "Ajustes de la reserva online"
 roles: [owner, admin]
 screens: [/online-booking]
