@@ -8,7 +8,7 @@ group: "Atender una cita"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [check in, checkin, el cliente llegó, llegó, ingresar, marcar llegada, registrar llegada, cliente en la barbería, recibir al cliente, barbero listo, aún no ha llegado, siguiente paso, estado de la cita]
-related: [calendario/abrir-una-cita, calendario/estados-de-una-cita, calendario/pasar-al-cliente-a-la-silla, calendario/cobrar-una-cita, calendario/el-cliente-no-se-presento]
+related: [front-desk/check-in-con-cita, calendario/abrir-una-cita, calendario/estados-de-una-cita, calendario/pasar-al-cliente-a-la-silla, calendario/cobrar-una-cita, calendario/el-cliente-no-se-presento]
 status: draft
 updated: 2026-09-25
 ---
@@ -33,8 +33,13 @@ También puedes tocar **Acciones** (el botón ≡ de la cabecera) y elegir **Ing
 
 ![El menú Acciones de la cita abierto](/assets/es/calendario/abrir-una-cita/acciones.png)
 
+Después de **Ingresar**, la cita queda en **Ingresado**: **SIGUIENTE PASO** dice «Laura está esperando.» y el botón cambia a **Sentar** con el precio de la cita. En la tarjeta del calendario aparece el botón **Sentar**.
+
+> [!TIP]
+> Si tienes una tablet en la entrada, el cliente puede hacer esto solo con el [Front Desk](/ayuda/front-desk/que-es).
+
 > [!NOTE]
-> Lo que pasa después de tocar **Ingresar** (cómo cambia la tarjeta, qué dice **SIGUIENTE PASO**, si avisa al barbero) todavía no está comprobado. Tampoco qué hace **Barbero listo**.
+> Todavía no está comprobado qué hace **Barbero listo**.
 
 ## Cómo llama la app a cada estado
 
