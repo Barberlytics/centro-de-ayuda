@@ -3,7 +3,7 @@ id: acceso-y-cuenta/metodos-de-pago-de-tu-plan
 title: "Administrar la tarjeta con la que pagas Barberlytics"
 description: "Dónde ves la tarjeta con la que pagas tu plan y por dónde entras a administrar tus métodos de pago."
 section: acceso-y-cuenta
-order: 160
+order: 170
 group: "Tu plan y tus pagos"
 roles: [owner]
 screens: [/profile, /settings/billing-details]

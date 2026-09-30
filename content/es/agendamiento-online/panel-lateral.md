@@ -3,7 +3,7 @@ id: agendamiento-online/panel-lateral
 title: "Reservas en tu sitio web: botón «Book now» flotante"
 description: "Cómo agregar a tu sitio web el Panel lateral de reservas: un botón flotante «Book now» que abre la reserva sin salir de tu página, copiando el código con Copiar."
 section: agendamiento-online
-order: 100
+order: 150
 group: "Llevar la reserva a tus canales"
 roles: [owner, admin]
 screens: [/online-booking]

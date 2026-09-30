@@ -3,7 +3,7 @@ id: agendamiento-online/tiempos-de-la-lista-de-espera
 title: "Lista de espera: cuánto tiene el cliente para aceptar y para llegar"
 description: "Los dos tiempos de la lista de espera en Agendamiento online: Minutos para aceptar la cita que se liberó y Minutos para llegar a la barbería."
 section: agendamiento-online
-order: 160
+order: 210
 group: "Ajustes de la reserva online"
 roles: [owner, admin]
 screens: [/online-booking]

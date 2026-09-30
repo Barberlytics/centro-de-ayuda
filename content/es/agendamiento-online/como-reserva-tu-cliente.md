@@ -8,9 +8,9 @@ group: "Así reserva tu cliente"
 roles: [owner, admin, recepcion]
 screens: [/online-booking, /calendar]
 keywords: [reserva online, cita online, cómo reserva el cliente, enlace de reserva, página de reserva, book now, reservar por internet, el cliente agenda solo, flujo de reserva, booking]
-related: [agendamiento-online/cliente-que-vuelve, agendamiento-online/elegir-sede-servicio-y-barbero, agendamiento-online/elegir-fecha-y-hora, agendamiento-online/confirmar-la-reserva, agendamiento-online/que-ve-tu-cliente]
+related: [agendamiento-online/cliente-nuevo, agendamiento-online/pagar-la-reserva, agendamiento-online/cita-confirmada, agendamiento-online/cliente-que-vuelve, agendamiento-online/elegir-sede-servicio-y-barbero, agendamiento-online/elegir-fecha-y-hora, agendamiento-online/confirmar-la-reserva, agendamiento-online/que-ve-tu-cliente]
 status: review
-updated: 2026-09-25
+updated: 2026-09-30
 ---
 
 # Cómo reserva tu cliente, paso a paso
@@ -39,17 +39,27 @@ En el celular se ve igual, a una columna.
 
 «Bienvenido de nuevo, Laura.» con su última sede, servicio y barbero ya elegidos: solo escoge día y hora. Lo cuenta [Si ya es cliente: repetir su última visita](/ayuda/agendamiento-online/cliente-que-vuelve).
 
+Si es su primera vez, antes le pide nombre, apellido y correo ([Si es su primera vez: Conozcámonos](/ayuda/agendamiento-online/cliente-nuevo)).
+
 ## 3. Elige sede, servicio y barbero
 
 Arriba ve los pasos **Sede › Servicio/Barbero › Fecha y hora › Confirmar**. Elige la sucursal, el servicio y el barbero (o **Sin preferencia**), y ve el precio de cada barbero. Lo cuenta [Elegir sede, servicio y barbero](/ayuda/agendamiento-online/elegir-sede-servicio-y-barbero).
 
 ## 4. Elige fecha y hora
 
-Los días del mes y las horas libres del barbero, en **Tarde** y **Noche**. Lo cuenta [Elegir fecha y hora](/ayuda/agendamiento-online/elegir-fecha-y-hora).
+Los días del mes y las horas libres del barbero, en **Mañana**, **Tarde** y **Noche**. Con **Sin preferencia** ve las horas de cualquier barbero ([Sin preferencia: cómo se asigna el barbero](/ayuda/agendamiento-online/sin-preferencia-al-reservar)). Lo cuenta [Elegir fecha y hora](/ayuda/agendamiento-online/elegir-fecha-y-hora).
 
 ## 5. Confirma
 
-Revisa la cita, puede **Editar**, **Eliminar** o **Agregar cita**, y toca **¡Reservar ahora!**. Lo cuenta [Confirmar la reserva](/ayuda/agendamiento-online/confirmar-la-reserva).
+Revisa la cita, puede **Editar**, **Eliminar** o **Agregar cita** ([Agregar otra cita](/ayuda/agendamiento-online/agregar-otra-cita)). Lo cuenta [Confirmar la reserva](/ayuda/agendamiento-online/confirmar-la-reserva).
+
+## 6. Reserva
+
+Si la sucursal solo cobra en la barbería, toca **Reservar ahora y pagar en tienda** y listo. Si tiene otras formas de pago, toca **¡Reservar ahora!**, elige **Pagar en tienda** y toca **Pagar $…**. Lo cuenta [Reservar y pagar en la barbería](/ayuda/agendamiento-online/pagar-la-reserva).
+
+## 7. Confirmado
+
+Ve sus citas con **Agregar al calendario**, el total y **Agendar otra cita**. Lo cuenta [La cita confirmada](/ayuda/agendamiento-online/cita-confirmada).
 
 ## Después
 

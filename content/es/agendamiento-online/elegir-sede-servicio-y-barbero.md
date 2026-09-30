@@ -3,14 +3,14 @@ id: agendamiento-online/elegir-sede-servicio-y-barbero
 title: "Elegir sede, servicio y barbero"
 description: "Los dos primeros pasos de la reserva online: la sucursal, el servicio con su precio y duración, y el barbero (o Sin preferencia) con su precio y su ficha."
 section: agendamiento-online
-order: 60
+order: 70
 group: "Así reserva tu cliente"
 roles: [owner, admin, recepcion]
 screens: [/online-booking]
 keywords: [elegir sede, elegir sucursal, elegir servicio, elegir barbero, sin preferencia, precio por barbero, ficha del barbero, seleccionar este barbero, desde, &up]
-related: [agendamiento-online/como-reserva-tu-cliente, agendamiento-online/elegir-fecha-y-hora, agendamiento-online/que-ve-tu-cliente, agendamiento-online/no-aparece-un-servicio-o-barbero]
+related: [agendamiento-online/sin-preferencia-al-reservar, agendamiento-online/como-reserva-tu-cliente, agendamiento-online/elegir-fecha-y-hora, agendamiento-online/que-ve-tu-cliente, agendamiento-online/no-aparece-un-servicio-o-barbero]
 status: review
-updated: 2026-09-25
+updated: 2026-09-30
 ---
 
 # Elegir sede, servicio y barbero
@@ -35,7 +35,7 @@ Una tarjeta por sucursal con su nombre, su dirección, su horario («08:00 a 23:
 
 ![La lista de barberos con el precio de cada uno para el servicio elegido](/assets/es/agendamiento-online/como-reserva-tu-cliente/barberos.png)
 
-- Primero, **Sin preferencia**: le toca el barbero que esté libre ([Clientes sin preferencia de barbero](/ayuda/calendario/clientes-sin-preferencia-de-barbero)).
+- Primero, **Sin preferencia**: le toca el barbero que esté libre, según tu orden de **Equipo** ([Sin preferencia: cómo se asigna el barbero](/ayuda/agendamiento-online/sin-preferencia-al-reservar)). Si un solo barbero hace el servicio, la página lo elige sola.
 - Luego una tarjeta por barbero con su foto, su nombre, su nivel y **su precio para ese servicio**. El precio puede cambiar de un barbero a otro (por ejemplo $50.00, $60.00, $65.00), según los precios propios de cada uno ([Crear un servicio: quién lo hace](/ayuda/servicios/crear-un-servicio-equipo)).
 - **Ver** abre la ficha del barbero: **Descripción**, **Nivel**, los **Servicios** que hace y su **Galería**, con el botón **Seleccionar este barbero**.
   ![La ficha de un barbero con Seleccionar este barbero](/assets/es/agendamiento-online/como-reserva-tu-cliente/ver-barbero.png)
@@ -47,7 +47,7 @@ Una tarjeta por sucursal con su nombre, su dirección, su horario («08:00 a 23:
 Porque es el precio desde el que empieza. El precio exacto aparece al elegir el barbero.
 
 **¿Qué pasa si elige Sin preferencia?**
-En el siguiente paso ve las horas en que cualquier barbero está libre. Qué barbero queda asignado lo decide tu orden de **Sin preferencia** en Equipo.
+En el siguiente paso ve las horas en que cualquier barbero está libre. El barbero se asigna al reservar, con tu orden de **Sin preferencia** en Equipo. Mira [Sin preferencia: cómo se asigna el barbero](/ayuda/agendamiento-online/sin-preferencia-al-reservar).
 
 **No aparece un servicio o un barbero.**
 Mira [Un servicio o un barbero no aparece al reservar](/ayuda/agendamiento-online/no-aparece-un-servicio-o-barbero).

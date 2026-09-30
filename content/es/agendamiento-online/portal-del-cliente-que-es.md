@@ -3,7 +3,7 @@ id: agendamiento-online/portal-del-cliente-que-es
 title: "Portal del cliente: qué puede hacer tu cliente"
 description: "Cómo entra tu cliente al portal y qué hace ahí: ver sus citas próximas, pasadas y canceladas, y reagendar o cancelar las próximas."
 section: agendamiento-online
-order: 200
+order: 250
 group: "Portal del cliente"
 roles: [owner, admin, recepcion]
 screens: [/client-portal]

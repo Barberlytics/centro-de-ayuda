@@ -3,7 +3,7 @@ id: agendamiento-online/portal-del-cliente-enlace-directo
 title: "El enlace directo del portal del cliente"
 description: "El Enlace del portal para compartir por WhatsApp o Instagram sin tocar tu sitio web, y qué revisar antes de enviarlo."
 section: agendamiento-online
-order: 220
+order: 270
 group: "Portal del cliente"
 roles: [owner, admin, recepcion]
 screens: [/client-portal]

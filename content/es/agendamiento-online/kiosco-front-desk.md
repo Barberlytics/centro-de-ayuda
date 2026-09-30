@@ -3,7 +3,7 @@ id: agendamiento-online/kiosco-front-desk
 title: "El kiosco Front Desk: check-in de clientes en una tablet"
 description: "El Enlace de Front Desk de Agendamiento online: una pantalla de recepción para una tablet o kiosco en tu local, donde los clientes hacen check-in al llegar."
 section: agendamiento-online
-order: 130
+order: 180
 group: "Llevar la reserva a tus canales"
 roles: [owner, admin, recepcion]
 screens: [/online-booking]

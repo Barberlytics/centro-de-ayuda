@@ -2,7 +2,7 @@
   "$comment": "Subgrupos del menú por sección, en orden, con sus artículos en orden. Lo aplica scripts/apply-groups.mjs (escribe `group` y `order` en cada artículo y `groups` en _sections.json). Secciones de 8 artículos o menos no llevan subgrupos.",
   "acceso-y-cuenta": {
     "Entrar": ["ingresar", "registrar-tu-barberia", "elegir-el-pais-del-telefono", "confirmar-el-codigo", "reenviar-el-codigo", "olvidaste-tu-numero", "contactar-a-soporte-desde-la-entrada", "politica-de-privacidad-y-terminos"],
-    "Si no puedes entrar": ["codigo-incorrecto-o-vencido", "numero-no-registrado"],
+    "Si no puedes entrar": ["codigo-incorrecto-o-vencido", "usuario-bloqueado-por-seguridad", "numero-no-registrado"],
     "Tu cuenta y tus perfiles": ["mi-perfil", "cambiar-de-rol", "tienes-dos-perfiles", "cerrar-sesion"],
     "Tu plan y tus pagos": ["cambiar-mi-plan", "metodos-de-pago-de-tu-plan", "descargar-tus-facturas"]
   },
@@ -35,11 +35,12 @@
   },
   "agendamiento-online": {
     "Cómo funciona": ["que-es", "que-ve-tu-cliente", "citas-que-crea-el-cliente"],
-    "Así reserva tu cliente": ["como-reserva-tu-cliente", "cliente-que-vuelve", "elegir-sede-servicio-y-barbero", "elegir-fecha-y-hora", "confirmar-la-reserva"],
+    "Así reserva tu cliente": ["como-reserva-tu-cliente", "cliente-que-vuelve", "cliente-nuevo", "elegir-sede-servicio-y-barbero", "sin-preferencia-al-reservar", "elegir-fecha-y-hora", "confirmar-la-reserva", "agregar-otra-cita"],
+    "Pago y confirmación": ["pagar-la-reserva", "cita-confirmada"],
     "Llevar la reserva a tus canales": ["enlace-directo-y-utm", "panel-lateral", "abrir-desde-un-enlace", "embebido", "kiosco-front-desk"],
     "Ajustes de la reserva online": ["anticipacion-y-franjas", "aumento-de-precios-por-ocupacion", "tiempos-de-la-lista-de-espera", "metodos-de-pago-de-la-reserva", "cancelar-o-reprogramar-en-linea", "politicas-de-reserva"],
     "Portal del cliente": ["portal-del-cliente-que-es", "portal-del-cliente-en-tu-sitio", "portal-del-cliente-enlace-directo"],
-    "Si algo falla": ["no-aparece-un-servicio-o-barbero", "no-hay-horas-disponibles"]
+    "Si algo falla": ["no-aparece-un-servicio-o-barbero", "no-hay-horas-disponibles", "mensajes-al-reservar"]
   },
   "clientes": {
     "La lista de clientes": ["la-lista-de-clientes", "buscar-un-cliente", "crear-un-cliente", "importar-clientes", "descargar-clientes"],

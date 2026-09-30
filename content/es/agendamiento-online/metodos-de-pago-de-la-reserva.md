@@ -3,7 +3,7 @@ id: agendamiento-online/metodos-de-pago-de-la-reserva
 title: "Cómo puede pagar el cliente la cita que reserva en línea"
 description: "Los Métodos de pago aceptados de la reserva online: pago en el local y pago en línea con Stripe, y qué necesitas para activar cada uno."
 section: agendamiento-online
-order: 170
+order: 220
 group: "Ajustes de la reserva online"
 roles: [owner, admin]
 screens: [/online-booking]

@@ -3,7 +3,7 @@ id: acceso-y-cuenta/usuario-bloqueado-por-seguridad
 title: "Me dice «El usuario ha sido bloqueado por seguridad»"
 description: "Qué significa el bloqueo que aparece al confirmar el código y cómo pedir que te lo quiten escribiendo a soporte."
 section: acceso-y-cuenta
-order: 85
+order: 100
 group: "Si no puedes entrar"
 roles: [todos]
 screens: [/authenticate/verifyotp, /authenticate/contact]

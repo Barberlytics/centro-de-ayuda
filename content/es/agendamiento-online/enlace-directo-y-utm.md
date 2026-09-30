@@ -3,7 +3,7 @@ id: agendamiento-online/enlace-directo-y-utm
 title: "El enlace directo de reserva y los parámetros UTM"
 description: "El enlace que compartes por WhatsApp e Instagram para que tus clientes reserven sin sitio web, y cómo marcarlo con UTM para saber de dónde llegan."
 section: agendamiento-online
-order: 90
+order: 140
 group: "Llevar la reserva a tus canales"
 roles: [owner, admin]
 screens: [/online-booking]

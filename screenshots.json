@@ -4080,5 +4080,589 @@
     "viewport": "tall",
     "theme": "light",
     "clip": "p:text-is(\"Enlace directo\") >> xpath=ancestor::*[2]"
+  },
+  "agendamiento-online/sin-preferencia-al-reservar/horas": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 3000
+      },
+      {
+        "clickText": "Sin preferencia",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2500
+      }
+    ]
+  },
+  "agendamiento-online/sin-preferencia-al-reservar/confirmar": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 3000
+      },
+      {
+        "clickText": "Sin preferencia",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2500
+      },
+      {
+        "click": "text=/\\d\\d:\\d\\d (AM|PM)/ >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2000
+      }
+    ]
+  },
+  "agendamiento-online/agregar-otra-cita/dos-citas": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 3000
+      },
+      {
+        "clickText": "Sin preferencia",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2500
+      },
+      {
+        "click": "text=/\\d\\d:\\d\\d (AM|PM)/ >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2000
+      },
+      {
+        "clickText": "Agregar cita",
+        "wait": 1500
+      },
+      {
+        "clickText": "Signature Service",
+        "wait": 3000
+      },
+      {
+        "clickText": "Sin preferencia",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2500
+      },
+      {
+        "click": "text=/\\d\\d:\\d\\d (AM|PM)/ >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2000
+      }
+    ]
+  },
+  "agendamiento-online/cliente-nuevo/conozcamonos": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img",
+      "fieldset:has(select) span"
+    ],
+    "steps": [
+      {
+        "select": [
+          "select",
+          "+1"
+        ],
+        "wait": 300
+      },
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "2015550123"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      }
+    ]
+  },
+  "agendamiento-online/sin-preferencia-al-reservar/selector": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 3000
+      },
+      {
+        "clickText": "Sin preferencia",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2500
+      },
+      {
+        "clickText": "Any available barber",
+        "wait": 1200
+      }
+    ]
+  },
+  "agendamiento-online/sin-preferencia-al-reservar/bloque": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 1500
+      },
+      {
+        "click": "text=Ver >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Seleccionar este barbero",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      },
+      {
+        "scrollTo": "text=Any available barber",
+        "wait": 500
+      },
+      {
+        "clickText": "Any available barber",
+        "wait": 1200
+      },
+      {
+        "scrollTo": "text=/\\+\\d+ más/",
+        "wait": 500
+      }
+    ]
+  },
+  "agendamiento-online/agregar-otra-cita/editar": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 1500
+      },
+      {
+        "click": "text=Ver >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Seleccionar este barbero",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      },
+      {
+        "click": "text=/\\d\\d:\\d\\d PM/ >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      },
+      {
+        "clickText": "Editar",
+        "wait": 2500
+      }
+    ]
+  },
+  "agendamiento-online/agregar-otra-cita/sin-citas": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Detalles de la sede >> nth=1",
+        "wait": 1500
+      },
+      {
+        "clickText": "Men's Haircut",
+        "wait": 1500
+      },
+      {
+        "click": "text=Ver >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Seleccionar este barbero",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      },
+      {
+        "click": "text=/\\d\\d:\\d\\d PM/ >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 1500
+      },
+      {
+        "clickText": "Eliminar",
+        "wait": 1500
+      }
+    ]
+  },
+  "agendamiento-online/cliente-que-vuelve/mas": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Más",
+        "wait": 2500
+      }
+    ]
+  },
+  "agendamiento-online/pagar-la-reserva/tienda-elegida": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "click": "text=/\\d\\d:\\d\\d (AM|PM)/ >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 2500
+      },
+      {
+        "clickText": "¡Reservar ahora!",
+        "wait": 2500
+      },
+      {
+        "clickText": "Pagar en tienda",
+        "wait": 1000
+      }
+    ]
+  },
+  "agendamiento-online/pagar-la-reserva/pagar-en-tienda": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=High End Barbershop (test)",
+        "wait": 3000
+      },
+      {
+        "clickText": "Classic Haircut",
+        "wait": 3000
+      },
+      {
+        "clickText": "Sin preferencia",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2500
+      },
+      {
+        "click": "text=/\\d\\d:\\d\\d (AM|PM)/ >> nth=0",
+        "wait": 1500
+      },
+      {
+        "clickText": "Siguiente",
+        "wait": 2500
+      }
+    ]
+  },
+  "agendamiento-online/mensajes-al-reservar/sin-servicios": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/book/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel]",
+          "$HELP_BOOKING_PHONE"
+        ],
+        "wait": 500
+      },
+      {
+        "clickText": "Continuar",
+        "wait": 3000
+      },
+      {
+        "clickText": "Elegir algo diferente",
+        "wait": 1500
+      },
+      {
+        "click": "text=Prueba Elkin",
+        "wait": 5000
+      }
+    ]
   }
 }

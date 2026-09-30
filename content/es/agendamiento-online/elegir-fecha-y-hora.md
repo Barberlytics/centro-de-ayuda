@@ -3,19 +3,19 @@ id: agendamiento-online/elegir-fecha-y-hora
 title: "Elegir fecha y hora"
 description: "El paso Fecha y hora de la reserva online: los días del mes, las horas libres del barbero en Tarde y Noche, y la opción de aceptar a cualquier barbero para tener más horas."
 section: agendamiento-online
-order: 70
+order: 90
 group: "Así reserva tu cliente"
 roles: [owner, admin, recepcion]
 screens: [/online-booking]
 keywords: [elegir hora, elegir fecha, horarios disponibles, horas libres, tarde, noche, any available barber, sin preferencia, cualquier barbero, disponibilidad]
-related: [agendamiento-online/elegir-sede-servicio-y-barbero, agendamiento-online/confirmar-la-reserva, agendamiento-online/no-hay-horas-disponibles, equipo/horas-de-trabajo-del-equipo]
+related: [agendamiento-online/sin-preferencia-al-reservar, agendamiento-online/elegir-sede-servicio-y-barbero, agendamiento-online/confirmar-la-reserva, agendamiento-online/no-hay-horas-disponibles, equipo/horas-de-trabajo-del-equipo]
 status: review
-updated: 2026-09-25
+updated: 2026-09-30
 ---
 
 # Elegir fecha y hora
 
-**En resumen:** el cliente ve los días del mes y, para el día elegido, las horas libres de su barbero, agrupadas en **Tarde** y **Noche**. Debajo puede aceptar a cualquier barbero para ver más horas. Toca una y **Siguiente**.
+**En resumen:** el cliente ve los días del mes y, para el día elegido, las horas libres de su barbero, agrupadas en **Mañana**, **Tarde** y **Noche**. Debajo puede aceptar a cualquier barbero para ver más horas. Toca una y **Siguiente**.
 
 ![El calendario de días y las horas disponibles del barbero](/assets/es/agendamiento-online/como-reserva-tu-cliente/fecha-y-hora.png)
 
@@ -25,9 +25,11 @@ updated: 2026-09-25
 |---|---|
 | Mes | «September 2026» |
 | Días | Una tira de días («Fri 25», «Sat 26»… «Wed 30») |
-| **Horarios disponibles** | El barbero elegido con su nivel y sus horas libres, de media en media hora, en **Tarde** y **Noche** |
-| **Sin preferencia** | «Any available barber» con cuántas horas hay si acepta a cualquiera («12 disponibles») |
+| **Horarios disponibles** | El barbero elegido con su nivel y sus horas libres, de media en media hora, en **Mañana**, **Tarde** y **Noche**. El barbero es un selector: se abre para cambiar a otro o a **Sin preferencia**. |
+| **Sin preferencia** | «Any available barber» con cuántas horas hay si acepta a cualquiera («26 disponibles»). Al tocarlo muestra esas horas y «+19 más». Lo cuenta [Sin preferencia: cómo se asigna el barbero](/ayuda/agendamiento-online/sin-preferencia-al-reservar). |
 | **Siguiente** | Pasa a **Confirmar** |
+
+![El bloque Sin preferencia desplegado con más horas](/assets/es/agendamiento-online/sin-preferencia-al-reservar/bloque.png)
 
 ## De dónde salen las horas
 

@@ -55,7 +55,7 @@ async function prodPage(page, recipe) {
 /**
  * Pantalla pública de producción con pasos opcionales (`steps` en la receta):
  *   { "click": "selector" } · { "clickText": "Texto del botón" }
- *   { "fill": ["selector", "valor"] } · { "wait": 500 }
+ *   { "fill": ["selector", "valor"] } · { "select": ["selector", "valor"] } · { "wait": 500 }
  * Solo se escribe texto de ejemplo que falla la validación del navegador;
  * nunca un celular, un código ni un correo reales.
  */
@@ -66,6 +66,7 @@ async function runSteps(page, steps = []) {
     else if (step.clickText) await page.getByText(step.clickText, { exact: true }).locator("visible=true").first().click();
     // Un valor `$NOMBRE` se lee de una variable de entorno: así un celular real nunca queda en el repo.
     else if (step.fill) await page.locator(step.fill[0]).first().fill(step.fill[1].replace(/^\$(\w+)$/, (_, name) => process.env[name] ?? ""));
+    else if (step.select) await page.locator(step.select[0]).first().selectOption(step.select[1], { force: Boolean(step.force) });
     else if (step.hover) await page.locator(step.hover).first().hover();
     else if (step.scrollTo) await page.locator(step.scrollTo).first().scrollIntoViewIfNeeded();
     await page.waitForTimeout(step.wait ?? 500);

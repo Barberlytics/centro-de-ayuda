@@ -8,9 +8,9 @@ group: "Así reserva tu cliente"
 roles: [owner, admin, recepcion]
 screens: [/online-booking]
 keywords: [bienvenido de nuevo, cliente que vuelve, repetir cita, última visita, reservar lo mismo, cliente recurrente, reserva rápida, preseleccionamos]
-related: [agendamiento-online/como-reserva-tu-cliente, agendamiento-online/elegir-sede-servicio-y-barbero, agendamiento-online/elegir-fecha-y-hora]
+related: [agendamiento-online/cliente-nuevo, agendamiento-online/como-reserva-tu-cliente, agendamiento-online/elegir-sede-servicio-y-barbero, agendamiento-online/elegir-fecha-y-hora]
 status: review
-updated: 2026-09-25
+updated: 2026-09-30
 ---
 
 # Si ya es cliente: repetir su última visita
@@ -28,7 +28,11 @@ updated: 2026-09-25
 | **PRESELECCIONAMOS TU ÚLTIMA VISITA** | Tres tarjetas, cada una con **Cambiar**: **Sede**, **Tu último servicio** (con duración y precio, por ejemplo «30 min • $50.00») y **Tu último barbero** (con su nivel) |
 | **Elige la hora de tu cita** | «Selecciona un día y una hora disponible que te convenga.» Tres días (por ejemplo «Fri Sep 25», «Sat Sep 26», «Sun Sep 27») y **Más** para ver otros |
 | Horas | «Horarios disponibles para Fri, Sep 25» con las horas libres de su barbero y flechas para ver más |
-| Botones | **← Atrás** y **Continuar** (se activa al elegir una hora) |
+| Botones | **← Atrás** y **Continuar** (se activa al elegir una hora). **Continuar** lleva a **Confirmar cita**. |
+
+**Más** abre el paso **Fecha y hora** completo, con el calendario del mes, las horas por **Mañana**, **Tarde** y **Noche** y la opción **Sin preferencia** ([Elegir fecha y hora](/ayuda/agendamiento-online/elegir-fecha-y-hora)).
+
+![Lo que abre Más: el mes, el día y las horas de su barbero por Mañana y Tarde](/assets/es/agendamiento-online/cliente-que-vuelve/mas.png)
 
 ## Para cambiar solo una cosa
 
@@ -43,4 +47,4 @@ Por el celular. Si ese número ya está en **Clientes**, lo reconoce y usa su ú
 Solo verá las horas libres de ese barbero. Puede tocar **Cambiar** en **Tu último barbero** o elegir otro día. Mira [El cliente no encuentra horas disponibles](/ayuda/agendamiento-online/no-hay-horas-disponibles).
 
 **¿Qué ve un cliente nuevo?**
-El flujo completo desde la sede. Lo que pide exactamente a alguien que reserva por primera vez (nombre, correo) todavía no está comprobado.
+Primero le pide nombre, apellido y correo. Mira [Si es su primera vez: Conozcámonos](/ayuda/agendamiento-online/cliente-nuevo).
