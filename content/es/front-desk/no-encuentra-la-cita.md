@@ -16,6 +16,10 @@ updated: 2026-09-30
 
 **En resumen:** el kiosco busca una cita **pendiente** de hoy con ese celular. Si no la encuentra, muestra «No se encontró ninguna cita». Revisa estas cosas en orden.
 
+Cuando el kiosco no encuentra una cita pendiente para ese celular, el cliente ve esto:
+
+![La pantalla No se encontró ninguna cita con Reservar una cita y Unirse a la lista de espera](/assets/es/front-desk/no-encuentra-la-cita/sin-cita.png)
+
 ## Qué revisar primero
 
 1. **El celular.** ¿Es el mismo que tiene en su ficha de cliente, con el país correcto (+57, +1, +58)? Si reservó con otro número, el kiosco no lo reconoce.

@@ -29,6 +29,7 @@ No necesitas comprar nada: es solo un enlace. Sirve cualquier tablet, celular o 
 1. Ve a **Configuración › Agendamiento online**.
 2. Busca el bloque **Enlace de Front Desk**: «Usa este enlace en una tablet o kiosco en tu local para que los clientes puedan hacer check-in al llegar.»
 3. En **Enlace del kiosco front desk**, toca **Copiar**. El enlace empieza por `https://fd.barberlytics.com/front-desk/`.
+   ![El bloque Enlace de Front Desk con el Enlace del kiosco front desk y el botón Copiar](/assets/es/front-desk/que-es/enlace.png)
 
 > [!NOTE]
 > No lo confundas con el **Enlace directo de reserva** (`…/book/…`), que está justo encima. Ese es para que el cliente reserve desde su casa; el del kiosco es para la pantalla de tu local.
@@ -36,6 +37,7 @@ No necesitas comprar nada: es solo un enlace. Sirve cualquier tablet, celular o 
 ## Lo que ve el cliente, paso a paso
 
 1. **Bienvenido** · «Ingresa tu número de teléfono» · **Check in**.
+   ![El kiosco activo con Bienvenido, el campo Número de teléfono y el botón Check in](/assets/es/front-desk/que-es/bienvenido.png)
 2. Según su caso:
    - Tiene cita hoy → queda registrado que llegó. Mira [Check in de un cliente con cita](/ayuda/front-desk/check-in-con-cita).
    - No tiene cita → «No se encontró ninguna cita». Mira [La lista de espera desde el kiosco](/ayuda/front-desk/lista-de-espera).

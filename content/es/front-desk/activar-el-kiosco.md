@@ -20,10 +20,12 @@ updated: 2026-09-30
 
 1. Copia el enlace en **Configuración › Agendamiento online › Enlace de Front Desk** y ábrelo en el navegador de la tablet.
 2. Verás **Recepción**: «Se requiere inicio de sesión del personal para activar el kiosco».
+   ![La pantalla Recepción del kiosco, que pide el celular de alguien del equipo o entrar con Barberlytics](/assets/es/front-desk/activar-el-kiosco/recepcion.png)
 3. Entra de una de estas dos formas:
    - **Con tu celular:** en **Teléfono del personal**, elige el país (+57, +1 o +58), escribe tu celular y toca **Ingresar con OTP**. Te llega un código de 6 dígitos: escríbelo en «Ingresa el código de verificación» y toca **Activar kiosco**.
    - **Con tu cuenta:** toca **Ingresar con Barberlytics**. Si ya tienes Barberlytics abierto en ese navegador, el kiosco se activa al instante.
 4. Aparece **Bienvenido** con el campo de celular. El kiosco ya está listo.
+   ![El kiosco activo con Bienvenido, el campo Número de teléfono y el botón Check in](/assets/es/front-desk/que-es/bienvenido.png)
 5. Toca **Pantalla completa** (abajo a la izquierda) para que el cliente no vea la barra del navegador.
 
 > [!TIP]

@@ -1,5 +1,5 @@
 {
-  "$comment": "Clave = ruta bajo assets/es sin .png. source: produccion (dash.barberlytics.com, con sesión guardada por `npm run shots:login`) | app (la app de Thema en local). state = función en scripts/screenshots.mjs. clip = selector CSS a recortar (con margen). highlight = selector que se resalta. blur = selectores que se difuminan (nombres de clientes o del equipo). viewport = desktop (1280×800) | mobile (390×844). theme = light | dark | both. Las recetas de la reserva online rellenan el celular con la variable de entorno HELP_BOOKING_PHONE (nunca se guarda en el repo).",
+  "$comment": "Clave = ruta bajo assets/es sin .png. source: produccion (dash.barberlytics.com, con sesión guardada por `npm run shots:login`) | app (la app de Thema en local). state = función en scripts/screenshots.mjs. clip = selector CSS a recortar (con margen). highlight = selector que se resalta. blur = selectores que se difuminan (nombres de clientes o del equipo). viewport = desktop (1280×800) | mobile (390×844). theme = light | dark | both. Las recetas de la reserva online rellenan el celular con la variable de entorno HELP_BOOKING_PHONE (nunca se guarda en el repo). Las del kiosco Front Desk (state prod-kiosk) usan HELP_KIOSK_PHONE: un cliente de prueba sin cita pendiente.",
   "acceso-y-cuenta/cerrar-sesion/menu-de-cuenta": {
     "source": "produccion",
     "route": "/",
@@ -4641,6 +4641,227 @@
         "click": "text=Prueba Elkin",
         "wait": 5000
       }
+    ]
+  },
+  "front-desk/activar-el-kiosco/recepcion": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ]
+  },
+  "front-desk/que-es/bienvenido": {
+    "source": "produccion",
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "prod-kiosk",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ]
+  },
+  "front-desk/bloquear-el-kiosco/botones": {
+    "source": "produccion",
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "prod-kiosk",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "highlight": "button[title='Bloquear kiosco']"
+  },
+  "front-desk/no-encuentra-la-cita/sin-cita": {
+    "source": "produccion",
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "prod-kiosk",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel], input[type=tel]",
+          "$HELP_KIOSK_PHONE"
+        ],
+        "wait": 400
+      },
+      {
+        "click": "button:text-is('Check in')",
+        "wait": 3000
+      }
+    ]
+  },
+  "front-desk/lista-de-espera/servicio": {
+    "source": "produccion",
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "prod-kiosk",
+    "viewport": "medium",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel], input[type=tel]",
+          "$HELP_KIOSK_PHONE"
+        ],
+        "wait": 400
+      },
+      {
+        "click": "button:text-is('Check in')",
+        "wait": 3000
+      },
+      {
+        "clickText": "Unirse a la lista de espera",
+        "wait": 2000
+      }
+    ]
+  },
+  "front-desk/lista-de-espera/barbero": {
+    "source": "produccion",
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "prod-kiosk",
+    "viewport": "medium",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel], input[type=tel]",
+          "$HELP_KIOSK_PHONE"
+        ],
+        "wait": 400
+      },
+      {
+        "click": "button:text-is('Check in')",
+        "wait": 3000
+      },
+      {
+        "clickText": "Unirse a la lista de espera",
+        "wait": 2000
+      },
+      {
+        "clickText": "Classic Haircut",
+        "wait": 600
+      },
+      {
+        "click": "button:text-is('Continuar')",
+        "wait": 2000
+      }
+    ]
+  },
+  "front-desk/lista-de-espera/confirmar": {
+    "source": "produccion",
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "prod-kiosk",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel], input[type=tel]",
+          "$HELP_KIOSK_PHONE"
+        ],
+        "wait": 400
+      },
+      {
+        "click": "button:text-is('Check in')",
+        "wait": 3000
+      },
+      {
+        "clickText": "Unirse a la lista de espera",
+        "wait": 2000
+      },
+      {
+        "clickText": "Classic Haircut",
+        "wait": 600
+      },
+      {
+        "click": "button:text-is('Continuar')",
+        "wait": 2000
+      },
+      {
+        "click": "h2:text-is('Elige un barbero') ~ button >> nth=0",
+        "wait": 600
+      },
+      {
+        "click": "button:text-is('Continuar')",
+        "wait": 2000
+      }
+    ]
+  },
+  "front-desk/reservar-desde-el-kiosco/reserva": {
+    "source": "produccion",
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "prod-kiosk",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel], input[type=tel]",
+          "$HELP_KIOSK_PHONE"
+        ],
+        "wait": 400
+      },
+      {
+        "click": "button:text-is('Check in')",
+        "wait": 3000
+      },
+      {
+        "clickText": "Reservar una cita",
+        "wait": 3500
+      }
+    ]
+  },
+  "front-desk/cliente-nuevo/conozcamonos": {
+    "source": "produccion",
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "prod-kiosk",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ],
+    "steps": [
+      {
+        "fill": [
+          "input[inputmode=tel], input[type=tel]",
+          "3009990011"
+        ],
+        "wait": 400
+      },
+      {
+        "click": "button:text-is('Check in')",
+        "wait": 3000
+      }
+    ]
+  },
+  "front-desk/que-es/enlace": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Enlace de Front Desk\") >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
     ]
   }
 }

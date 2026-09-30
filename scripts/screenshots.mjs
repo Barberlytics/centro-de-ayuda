@@ -94,6 +94,15 @@ const STATES = {
     await page.getByRole("main").waitFor();
   },
   "prod-page": prodPage,
+  // El kiosco Front Desk (URL completa) activado con «Ingresar con Barberlytics»: usa la sesión guardada de dash,
+  // así que no pide el código del personal. Los pasos solo miran; nunca se confirma una lista de espera ni una cita.
+  "prod-kiosk": async (page, recipe) => {
+    await page.goto(recipe.route, { waitUntil: "networkidle" });
+    await page.getByText("Ingresar con").last().click();
+    await page.getByText("Bienvenido", { exact: true }).waitFor();
+    await page.waitForTimeout(800);
+    await runSteps(page, recipe.steps);
+  },
   "prod-branch-menu": async (page, recipe) => {
     await prodPage(page, recipe);
     await headerToggle(page, 0).click();
