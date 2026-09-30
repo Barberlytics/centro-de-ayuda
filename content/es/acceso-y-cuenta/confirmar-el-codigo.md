@@ -8,7 +8,7 @@ group: "Entrar"
 roles: [todos]
 screens: [/authenticate/verifyotp]
 keywords: [código, confirmar número, verificación, reenviar código, no me llega, no llega el código, sms, móvil, atrás]
-related: [acceso-y-cuenta/ingresar, acceso-y-cuenta/olvidaste-tu-numero, acceso-y-cuenta/contactar-a-soporte-desde-la-entrada]
+related: [acceso-y-cuenta/usuario-bloqueado-por-seguridad, acceso-y-cuenta/ingresar, acceso-y-cuenta/olvidaste-tu-numero, acceso-y-cuenta/contactar-a-soporte-desde-la-entrada]
 status: review
 updated: 2026-09-25
 ---
@@ -34,6 +34,9 @@ Escríbelo en **Código** y toca **Confirmar**. Si no te llegó, toca **Reenviar
   [Contactar a soporte desde la entrada](/ayuda/acceso-y-cuenta/contactar-a-soporte-desde-la-entrada).
 
 ## Errores que puedes ver
+
+> [!NOTE]
+> Si tras varios códigos equivocados aparece «El usuario ha sido bloqueado por seguridad», mira [Me dice «El usuario ha sido bloqueado por seguridad»](/ayuda/acceso-y-cuenta/usuario-bloqueado-por-seguridad).
 
 | Lo que dice la pantalla | Qué significa | Qué hacer |
 |---|---|---|

@@ -8,7 +8,7 @@ group: "Si no puedes entrar"
 roles: [todos]
 screens: [/authenticate/verifyotp]
 keywords: [código incorrecto, código inválido, código vencido, código expirado, no acepta el código, error al confirmar, código equivocado, otp]
-related: [acceso-y-cuenta/reenviar-el-codigo, acceso-y-cuenta/confirmar-el-codigo, problemas/no-puedo-entrar]
+related: [acceso-y-cuenta/usuario-bloqueado-por-seguridad, acceso-y-cuenta/reenviar-el-codigo, acceso-y-cuenta/confirmar-el-codigo, problemas/no-puedo-entrar]
 status: draft
 updated: 2026-09-25
 ---
@@ -27,13 +27,16 @@ updated: 2026-09-25
 
 ## Lo que dice la pantalla
 
+> [!WARNING]
+> Si sigues fallando, la pantalla puede mostrar «El usuario ha sido bloqueado por seguridad». Mira [Me dice «El usuario ha sido bloqueado por seguridad»](/ayuda/acceso-y-cuenta/usuario-bloqueado-por-seguridad).
+
 | Texto | Qué significa |
 |---|---|
 | «El campo es requerido» | No escribiste el código |
 | «El campo es muy corto» | Faltan dígitos |
 
 > [!NOTE]
-> El mensaje exacto cuando el código es incorrecto o venció, cuántos intentos permite la app y si bloquea el acceso después de varios fallos todavía no está documentado: se comprueba con un celular real.
+> El mensaje exacto cuando el código es incorrecto o venció, cuántos intentos permite la app antes del bloqueo todavía no está documentado: se comprueba con un celular real.
 
 ## Preguntas frecuentes
 

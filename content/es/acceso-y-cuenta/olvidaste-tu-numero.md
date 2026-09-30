@@ -32,7 +32,7 @@ con su número de teléfono o la opción de cambiar el número de teléfono».
 
 ## Si no puedes recibir el correo
 
-Toca **No puedo recibir el correo electrónico**. Se abre el formulario de contacto para que nos cuentes qué pasó. Mira
+Toca **No puedo recibir el correo electrónico**. Se abre el formulario de contacto para que nos cuentes qué pasó: escribe el correo que crees tener registrado y, si lo sabes, algún celular con el que entraste antes. Mira
 [Contactar a soporte desde la entrada](/ayuda/acceso-y-cuenta/contactar-a-soporte-desde-la-entrada).
 
 Para volver, toca **← Atrás**.

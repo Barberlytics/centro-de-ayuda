@@ -8,7 +8,7 @@ group: "Entrar"
 roles: [todos]
 screens: [/authenticate/contact]
 keywords: [soporte, ayuda, contacto, contáctanos, no puedo entrar, escribir a soporte, formulario, botón de ayuda, problema]
-related: [acceso-y-cuenta/ingresar, acceso-y-cuenta/olvidaste-tu-numero, acceso-y-cuenta/confirmar-el-codigo]
+related: [acceso-y-cuenta/usuario-bloqueado-por-seguridad, acceso-y-cuenta/ingresar, acceso-y-cuenta/olvidaste-tu-numero, acceso-y-cuenta/confirmar-el-codigo]
 status: review
 updated: 2026-09-25
 ---
@@ -25,6 +25,12 @@ En todas las pantallas de entrada hay un círculo negro con un signo de interrog
 
 También llegas al mismo formulario desde **No puedo recibir el correo electrónico**, en la pantalla
 [Olvidaste tu número](/ayuda/acceso-y-cuenta/olvidaste-tu-numero).
+
+## Cuándo escribir
+
+- Te sale «El usuario ha sido bloqueado por seguridad» ([qué hacer](/ayuda/acceso-y-cuenta/usuario-bloqueado-por-seguridad)).
+- El código no te llega aunque toques **Reenviar Código**.
+- No recuerdas tu número y tampoco recibes el correo de **Olvidaste tu número?**.
 
 ## Pasos
 
