@@ -3,7 +3,7 @@ id: acceso-y-cuenta/descargar-tus-facturas
 title: "Descargar las facturas de Barberlytics"
 description: "Dónde están las facturas de tu plan y cómo descargarlas desde Mi perfil o desde Configuración."
 section: acceso-y-cuenta
-order: 160
+order: 170
 group: "Tu plan y tus pagos"
 roles: [owner]
 screens: [/profile, /settings/billing-details]

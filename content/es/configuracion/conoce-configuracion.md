@@ -8,9 +8,9 @@ group: "Configuración de la cuenta"
 roles: [owner, admin]
 screens: [/settings]
 keywords: [configuración, ajustes, settings, dónde cambio, grupos de ajustes, configuración de la cuenta, equipo, ventas, notificaciones, mapa de configuración, eliminar cuenta, opciones, preferencias, zona horaria, impuestos, propinas]
-related: [navegacion/las-secciones-de-barberlytics, sucursales/ajustes-generales-y-por-sucursal, configuracion/detalles-del-negocio-hora-y-calendario, configuracion/eliminar-tu-cuenta]
+related: [configuracion/agendamiento-online-ajustes, configuracion/portal-del-cliente, navegacion/las-secciones-de-barberlytics, sucursales/ajustes-generales-y-por-sucursal, configuracion/detalles-del-negocio-hora-y-calendario, configuracion/eliminar-tu-cuenta]
 status: review
-updated: 2026-09-25
+updated: 2026-09-30
 ---
 
 # Conoce Configuración: los cuatro grupos de ajustes
@@ -29,7 +29,8 @@ updated: 2026-09-25
 |---|---|---|
 | **Detalles del negocio** | «Administrar configuraciones como el nombre de su empresa y la zona horaria.» | Zona horaria, formato de hora, inicio de semana, horas de apertura, festivos y los enlaces de tu sitio web y redes. Mira [Detalles del negocio: zona horaria, formato de hora, semana y festivos](/ayuda/configuracion/detalles-del-negocio-hora-y-calendario). |
 | **Detalles de facturación y facturas** | «Visualiza tu actividad de tarifas y facturas de Barbelytics y administra tu información de facturación» | Tu plan, tus datos de facturación, tu tarjeta y tus facturas. Mira [Detalles de facturación y facturas](/ayuda/configuracion/detalles-de-facturacion-y-facturas). |
-| **Agendamiento online** | «Ajustar la forma en que los clientes pueden reservar y gestionar sus citas en línea» | Las reservas en tu sitio web y el enlace directo de reserva. Mira [Agendamiento online: qué es y cómo funciona](/ayuda/agendamiento-online/que-es). |
+| **Agendamiento online** | «Ajustar la forma en que los clientes pueden reservar y gestionar sus citas en línea» | Cómo reservan tus clientes (tu sitio web, el enlace directo, el kiosco Front Desk) y las reglas: anticipación, aumento de precios, lista de espera, pagos, cancelación y políticas. Mira [Agendamiento online: todos los ajustes](/ayuda/configuracion/agendamiento-online-ajustes). |
+| **Portal del cliente** | «Pon en tu sitio la pantalla donde tus clientes ven, reagendan y cancelan sus citas» | La pantalla donde tus clientes ven, mueven y cancelan sus citas solos. Mira [Portal del cliente](/ayuda/configuracion/portal-del-cliente). |
 | **Períodos de cierre del negocio** | «Establezca el período en el que su negocio estará cerrado» | Las fechas en las que la barbería no abre. Mira [Períodos de cierre del negocio](/ayuda/configuracion/periodos-de-cierre). |
 | **Dispositivos de pago** | «Conecta tu sistema a los dispositivos que te permitirán procesar los pagos» | Los datáfonos con los que cobras con tarjeta. Mira [Dispositivos de pago](/ayuda/configuracion/dispositivos-de-pago). |
 | **Sucursales** | «Administra las sucursales del negocio: crearlas, editarlas y ver su detalle.» | La lista de tus sucursales, con el botón **Crear Sucursal**. Mira [Empresa y sucursales: en qué se diferencian](/ayuda/sucursales/empresa-y-sucursales). |

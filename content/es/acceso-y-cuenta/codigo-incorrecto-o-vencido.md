@@ -3,7 +3,7 @@ id: acceso-y-cuenta/codigo-incorrecto-o-vencido
 title: "Qué hacer si el código es incorrecto o vence"
 description: "El código que escribiste no sirve: revisa el número, pide uno nuevo con Reenviar Código y vuelve a intentarlo."
 section: acceso-y-cuenta
-order: 80
+order: 90
 group: "Si no puedes entrar"
 roles: [todos]
 screens: [/authenticate/verifyotp]

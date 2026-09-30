@@ -3,7 +3,7 @@ id: acceso-y-cuenta/reenviar-el-codigo
 title: "Reenviar el código"
 description: "Si el código no llega, pídelo otra vez con Reenviar Código en la pantalla Confirmar número."
 section: acceso-y-cuenta
-order: 40
+order: 50
 group: "Entrar"
 roles: [todos]
 screens: [/authenticate/verifyotp]

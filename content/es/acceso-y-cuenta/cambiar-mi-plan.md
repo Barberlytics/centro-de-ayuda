@@ -3,7 +3,7 @@ id: acceso-y-cuenta/cambiar-mi-plan
 title: "Cambiar tu plan de Barberlytics"
 description: "Dónde está el botón Cambiar plan, qué muestra Mi perfil sobre tu plan actual y dónde ver los datos de facturación antes de cambiarlo."
 section: acceso-y-cuenta
-order: 140
+order: 150
 group: "Tu plan y tus pagos"
 roles: [owner]
 screens: [/profile, /settings/billing-details]

@@ -3,7 +3,7 @@ id: configuracion/periodos-de-cierre
 title: "Períodos de cierre del negocio"
 description: "Cómo registrar los días en que tu barbería cierra (vacaciones, reformas, un puente) para que nadie reserve online en esas fechas."
 section: configuracion
-order: 50
+order: 70
 group: "Configuración de la cuenta"
 roles: [owner, admin]
 screens: [/business-closed]

@@ -3,7 +3,7 @@ id: configuracion/notificaciones-del-calendario
 title: "Avisos del calendario: agenda ocupada, bloqueos y vacaciones"
 description: "Los avisos del grupo Calendario del Centro de notificaciones: un barbero o la barbería con la agenda ocupada por encima de un porcentaje, bloqueos y vacaciones."
 section: configuracion
-order: 180
+order: 200
 group: "Notificaciones"
 roles: [owner, admin]
 screens: [/notifications-center]

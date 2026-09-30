@@ -3,7 +3,7 @@ id: agendamiento-online/no-aparece-un-servicio-o-barbero
 title: "Un servicio o un barbero no aparece al reservar"
 description: "Qué revisar cuando un cliente no encuentra un servicio o un barbero en la página de reserva online."
 section: agendamiento-online
-order: 130
+order: 230
 group: "Si algo falla"
 roles: [owner, admin]
 screens: [/online-booking, /services, /team/barbers]

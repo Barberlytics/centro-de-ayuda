@@ -3,7 +3,7 @@ id: configuracion/eliminar-tu-cuenta
 title: "Eliminar tu cuenta"
 description: "Dónde está la opción Eliminar cuenta, qué borra y por qué no se puede deshacer."
 section: configuracion
-order: 210
+order: 230
 group: "Eliminar cuenta"
 roles: [owner, admin]
 screens: [/settings]

@@ -11,6 +11,7 @@ Cuatro grupos con una tarjeta por ajuste (título + frase):
 - **Detalles del negocio** · «Administrar configuraciones como el nombre de su empresa y la zona horaria.» (`/business-details/{id}`)
 - **Detalles de facturación y facturas** · «Visualiza tu actividad de tarifas y facturas de Barbelytics y administra tu información de facturación» (`/settings/billing-details`)
 - **Agendamiento online** · «Ajustar la forma en que los clientes pueden reservar y gestionar sus citas en línea» (`/online-booking`)
+- **Portal del cliente** · «Pon en tu sitio la pantalla donde tus clientes ven, reagendan y cancelan sus citas» (`/client-portal`) — nueva, vista el 2026-09-30
 - **Períodos de cierre del negocio** · «Establezca el período en el que su negocio estará cerrado» (`/business-closed`)
 - **Dispositivos de pago** · «Conecta tu sistema a los dispositivos que te permitirán procesar los pagos» (`/devices`)
 - **Sucursales** · «Administra las sucursales del negocio: crearlas, editarlas y ver su detalle.» (`/companies/locations`)
@@ -81,6 +82,47 @@ generales, pero se pueden configurar individualmente para cada ubicación.»
 - «Link de reserva online para tu sitio web» · «Comparte este enlace con tus clientes para que puedan reservar en línea
   directamente. Puedes agregar parámetros UTM para seguimiento de marketing.» · **Enlace directo de reserva**
   (`https://fd.barberlytics.com/book/…`) · **Copiar** · «Seguimiento UTM (opcional)».
+
+### Bloques de reglas (leídos el 2026-09-30, sin guardar)
+
+- «Enlace de Front Desk» · «Usa este enlace en una tablet o kiosco en tu local para que los clientes puedan hacer check-in al
+  llegar.» · **Enlace del kiosco front desk** (`https://fd.barberlytics.com/front-desk/…`) · **Copiar**. El enlace abre
+  «Recepción» · «Se requiere inicio de sesión del personal para activar el kiosco» · **Teléfono del personal** · **Ingresar con
+  OTP** · (con sesión abierta en el navegador) «Ingresar con Barberlytics» · **Pantalla completa**. No se activó.
+- «Disponibilidad de reserva online» · «Establezca con cuánta anticipación los clientes pueden reservar en línea y el tiempo que
+  deben esperar para cancelar o reprogramar.» · «Aviso previo necesario para que un cliente haga una cita»: **Anticipación mínima
+  para agendar\*** (30) + **Unidad de tiempo\*** (Minutos | Horas) · **Franjas horarias disponibles para reservar online** (vacío;
+  «No mas de 1 semana en el futuro» … «No mas de 8 semanas en el futuro») · **Intervalo de franja horaria por defecto** (15 minutos |
+  30 minutos | 45 minutos | 60 minutes; valor 30) · «El intervalo de franja horaria puede ser modificado por cada usuario haciendo
+  zoom en el calendario.»
+- «Aumento de precios» · «Establece el porcentaje de ocupación a partir del cual se comenzará a aplicar un cargo extra por cada
+  servicio.» · **Nivel de ocupación\*** (90.00) · **Aumentar el valor** (5.00) con botones **%** / **$** · «Edite el aumento para
+  cambiar entre porcentaje (%) o monto fijo ($) y ajuste el valor de aumento según sea necesario.»
+- «Lista de espera» · **Minutos para aceptar\*** y **Minutos para llegar\*** (15/30/45 minutos, «60 minutes»; valor 15 y 15).
+- «Métodos de pago aceptados» · «Configure los métodos de pago que aceptará para las reservas en línea.» · dos casillas: icono de
+  billete (pago en el local) y **stripe**; ambas marcadas.
+- «Cancelación y reprogramación en línea» · **Los clientes pueden cancelar o reprogramar en línea** («Hasta 24 horas de
+  antelación», 12, 6, 3, 2, 1 hora, «Hasta 30 minutos de antelación»; valor 3 h) · **Cargo por cancelación tardía\*** (% 10.00) ·
+  **Número máximo de cancelaciones en línea permitidas\*** (5) · «Una vez que el cliente alcance este límite, ya no podrá cancelar
+  online. Para cancelar, deberán contactar directamente con la barbería.»
+- «Vista previa de políticas de programación y cancelación» · etiquetas `<<time_for_cancel>>` `<<fee_cancellation>>`
+  `<<max_cancellations>>` · texto por defecto en inglés · tabla de valores (3 horas · 10.00 · 5).
+- **Guardar** al final (uno solo para todos los bloques de reglas).
+
+## Portal del cliente (`/client-portal`, visto el 2026-09-30)
+
+«El portal es la pantalla donde tu cliente entra con su teléfono, recibe un código y desde ahí ve sus próximas citas, las
+reagenda o las cancela. Aquí tienes las formas de ponerlo en tu sitio.»
+- «Qué puede hacer tu cliente» · «Entra con su número de teléfono y un código de verificación, sin crear contraseña. Ve sus
+  citas próximas, las pasadas y las canceladas, y sobre las próximas puede reagendar —con la disponibilidad real de su barbero—
+  o cancelar.» · «Reagendar y cancelar respetan los tiempos mínimos que hayas configurado en Reserva online.»
+- **Dentro de una página** · `data-bl-widget="appointments"` + `data-home-url="/"` · **Copiar**.
+- **Abrir desde un enlace** · `data-mode="floating"` + `data-trigger="#mis-citas"` · **Copiar** · «Si en la misma página
+  tienes también el widget de reserva, incluye el <script> una sola vez.» · «Opcional: data-accent y data-primary cambian los
+  colores del portal para que combine con tu sitio.»
+- «Enlace directo» · **Enlace del portal** (`https://fd.barberlytics.com/portal/…`) · **Copiar**. **Fallo**: el enlace
+  devolvió «404 Page not found» (dos intentos, 2026-09-30). Avisar al equipo.
+- Sin **Guardar**.
 
 ## Períodos de cierre del negocio
 

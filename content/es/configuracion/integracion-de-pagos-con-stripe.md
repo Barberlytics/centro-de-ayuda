@@ -3,7 +3,7 @@ id: configuracion/integracion-de-pagos-con-stripe
 title: "Integración de pagos con Stripe"
 description: "Cómo conectar tu barbería con Stripe para recibir pagos en línea: se elige una sucursal y se pegan las claves de Stripe."
 section: configuracion
-order: 140
+order: 160
 group: "Ventas"
 roles: [owner, admin]
 screens: [/payment-integration]

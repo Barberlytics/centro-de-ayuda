@@ -3,7 +3,7 @@ id: acceso-y-cuenta/contactar-a-soporte-desde-la-entrada
 title: "Contactar a soporte desde la entrada"
 description: "Cómo escribirnos cuando no puedes entrar: el botón de ayuda y el formulario Contáctanos."
 section: acceso-y-cuenta
-order: 60
+order: 70
 group: "Entrar"
 roles: [todos]
 screens: [/authenticate/contact]

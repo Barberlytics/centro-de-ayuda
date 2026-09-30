@@ -3943,5 +3943,142 @@
         "clickText": "Enviar"
       }
     ]
+  },
+  "configuracion/agendamiento-online-ajustes/pantalla": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ]
+  },
+  "configuracion/portal-del-cliente/pantalla": {
+    "source": "produccion",
+    "route": "/client-portal",
+    "state": "prod-page",
+    "viewport": "desktop",
+    "theme": "light"
+  },
+  "agendamiento-online/anticipacion-y-franjas/disponibilidad": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Disponibilidad de reserva online\") >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
+  },
+  "agendamiento-online/aumento-de-precios-por-ocupacion/bloque": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Aumento de precios\") >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
+  },
+  "agendamiento-online/tiempos-de-la-lista-de-espera/bloque": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Lista de espera\") >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
+  },
+  "agendamiento-online/metodos-de-pago-de-la-reserva/bloque": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Métodos de pago aceptados\") >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
+  },
+  "agendamiento-online/cancelar-o-reprogramar-en-linea/bloque": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Cancelación y reprogramación en línea\") >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
+  },
+  "agendamiento-online/politicas-de-reserva/bloque": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Vista previa de políticas de programación y cancelación\") >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
+  },
+  "agendamiento-online/kiosco-front-desk/enlace": {
+    "source": "produccion",
+    "route": "/online-booking",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Enlace de Front Desk\") >> xpath=ancestor::*[2]",
+    "blur": [
+      "img"
+    ]
+  },
+  "agendamiento-online/kiosco-front-desk/recepcion": {
+    "source": "produccion",
+    "public": true,
+    "route": "https://fd.barberlytics.com/front-desk/YTM5MDczOTgtY2ZjNC00MGZlLWJlNWMtNTYyMGVjOTI0YmJi",
+    "state": "pub-url",
+    "viewport": "desktop",
+    "theme": "light",
+    "blur": [
+      "img"
+    ]
+  },
+  "agendamiento-online/portal-del-cliente-que-es/que-puede-hacer": {
+    "source": "produccion",
+    "route": "/client-portal",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Qué puede hacer tu cliente\") >> xpath=ancestor::*[2]"
+  },
+  "agendamiento-online/portal-del-cliente-en-tu-sitio/dentro-de-una-pagina": {
+    "source": "produccion",
+    "route": "/client-portal",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "h4:text-is(\"Dentro de una página\") >> xpath=ancestor::*[2]"
+  },
+  "agendamiento-online/portal-del-cliente-en-tu-sitio/abrir-desde-un-enlace": {
+    "source": "produccion",
+    "route": "/client-portal",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "h4:text-is(\"Abrir desde un enlace\") >> xpath=ancestor::*[2]"
+  },
+  "agendamiento-online/portal-del-cliente-enlace-directo/enlace": {
+    "source": "produccion",
+    "route": "/client-portal",
+    "state": "prod-page",
+    "viewport": "tall",
+    "theme": "light",
+    "clip": "p:text-is(\"Enlace directo\") >> xpath=ancestor::*[2]"
   }
 }
