@@ -3,7 +3,7 @@ id: agendamiento-online/anticipacion-y-franjas
 title: "Con cuánta anticipación y hasta qué fecha pueden reservar tus clientes"
 description: "La Disponibilidad de reserva online: la anticipación mínima para agendar, cuántas semanas hacia adelante se abre la agenda y el intervalo de las franjas horarias."
 section: agendamiento-online
-order: 190
+order: 180
 group: "Ajustes de la reserva online"
 roles: [owner, admin]
 screens: [/online-booking]

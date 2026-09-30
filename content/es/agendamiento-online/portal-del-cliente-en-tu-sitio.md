@@ -3,7 +3,7 @@ id: agendamiento-online/portal-del-cliente-en-tu-sitio
 title: "Poner el portal del cliente en tu sitio web"
 description: "Las dos formas de poner el portal en tu página: Dentro de una página (una sección «Mis citas») y Abrir desde un enlace (un panel sobre tu página), con el fragmento de cada una."
 section: agendamiento-online
-order: 260
+order: 250
 group: "Portal del cliente"
 roles: [owner, admin]
 screens: [/client-portal]

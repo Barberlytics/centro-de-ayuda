@@ -8,7 +8,7 @@ group: "Configuración de la cuenta"
 roles: [owner, admin]
 screens: [/online-booking, /settings]
 keywords: [agendamiento online, reserva online, configurar reservas, ajustes de reserva, reservas en línea, anticipación mínima, franjas horarias, aumento de precios, lista de espera, métodos de pago, cancelación, reprogramar, políticas, front desk, kiosco, enlace de reserva, widget, sitio web]
-related: [agendamiento-online/que-es, agendamiento-online/anticipacion-y-franjas, agendamiento-online/cancelar-o-reprogramar-en-linea, agendamiento-online/kiosco-front-desk, configuracion/portal-del-cliente, configuracion/conoce-configuracion]
+related: [agendamiento-online/que-es, agendamiento-online/anticipacion-y-franjas, agendamiento-online/cancelar-o-reprogramar-en-linea, front-desk/que-es, configuracion/portal-del-cliente, configuracion/conoce-configuracion]
 status: review
 updated: 2026-09-30
 ---
@@ -31,7 +31,7 @@ La pantalla empieza así: «Ajuste la forma en que los clientes pueden reservar 
 |---|---|---|---|
 | **Agrega las reservas a tu sitio web** | Tres fragmentos para poner la reserva en tu página: **Panel lateral**, **Abrir desde enlace** y **Reserva embebida**. | Tu sitio ya existe y quieres un botón «Book now» flotante: copias el de **Panel lateral**. | [Botón «Book now» flotante](/ayuda/agendamiento-online/panel-lateral) |
 | **Link de reserva online para tu sitio web** | El **Enlace directo de reserva** y el «Seguimiento UTM (opcional)» (**Fuente**, **Medio**, **Campaña**). | Pegas el enlace en la bio de Instagram con Fuente «instagram». | [El enlace directo y los UTM](/ayuda/agendamiento-online/enlace-directo-y-utm) |
-| **Enlace de Front Desk** | El enlace de un kiosco para que el cliente haga check-in al llegar. | Una tablet en la entrada con el **Enlace del kiosco front desk** abierto. | [El kiosco Front Desk](/ayuda/agendamiento-online/kiosco-front-desk) |
+| **Enlace de Front Desk** | El enlace de un kiosco para que el cliente haga check-in al llegar. | Una tablet en la entrada con el **Enlace del kiosco front desk** abierto. | [Front Desk: el kiosco de recepción](/ayuda/front-desk/que-es) |
 | **Disponibilidad de reserva online** | La **Anticipación mínima para agendar**, hasta cuántas semanas en el futuro se puede reservar y el **Intervalo de franja horaria por defecto**. | 30 minutos de anticipación, «No mas de 4 semanas en el futuro», franjas de 30 minutos. | [Anticipación mínima y franjas](/ayuda/agendamiento-online/anticipacion-y-franjas) |
 | **Aumento de precios** | Un cargo extra por servicio cuando la ocupación pasa de un nivel. | Con ocupación de 90 % sube el valor 5 %. | [Aumento de precios por ocupación](/ayuda/agendamiento-online/aumento-de-precios-por-ocupacion) |
 | **Lista de espera** | Cuánto tiene el cliente para aceptar una cita que se liberó y para llegar. | 15 minutos para aceptar y 15 para llegar. | [Tiempos de la lista de espera](/ayuda/agendamiento-online/tiempos-de-la-lista-de-espera) |

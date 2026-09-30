@@ -3,7 +3,7 @@ id: agendamiento-online/mensajes-al-reservar
 title: "Mensajes que puede ver tu cliente al reservar"
 description: "Qué significan los avisos de la reserva online: cuenta bloqueada, horario tomado, barbero no disponible, sin métodos de pago y sin barberos, y qué hacer con cada uno."
 section: agendamiento-online
-order: 300
+order: 290
 group: "Si algo falla"
 roles: [owner, admin, recepcion]
 screens: [/online-booking, /customers/*]
