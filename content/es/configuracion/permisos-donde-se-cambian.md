@@ -3,7 +3,7 @@ id: configuracion/permisos-donde-se-cambian
 title: "Permisos: dónde se cambian y cómo se guardan"
 description: "Los dos lugares donde se ajustan los permisos: la pantalla de Permisos, con los predeterminados de cada rol, y la ficha de cada persona."
 section: configuracion
-order: 80
+order: 100
 group: "Equipo"
 roles: [owner, admin]
 screens: [/team-permission, /team/barbers]

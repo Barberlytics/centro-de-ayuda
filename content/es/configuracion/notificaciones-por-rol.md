@@ -3,7 +3,7 @@ id: configuracion/notificaciones-por-rol
 title: "Qué avisos recibe cada rol"
 description: "Las pestañas por rol del Centro de notificaciones: cada rol tiene su propia lista de interruptores, y el ajuste es general para todas las sucursales."
 section: configuracion
-order: 200
+order: 220
 group: "Notificaciones"
 roles: [owner, admin]
 screens: [/notifications-center]

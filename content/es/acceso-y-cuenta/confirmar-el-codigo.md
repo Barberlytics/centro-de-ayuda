@@ -3,7 +3,7 @@ id: acceso-y-cuenta/confirmar-el-codigo
 title: "Confirmar tu número con el código"
 description: "El paso después de Iniciar Sesión: escribes el código que te llegó al móvil y tocas Confirmar."
 section: acceso-y-cuenta
-order: 30
+order: 40
 group: "Entrar"
 roles: [todos]
 screens: [/authenticate/verifyotp]

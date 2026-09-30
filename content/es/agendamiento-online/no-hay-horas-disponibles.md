@@ -3,7 +3,7 @@ id: agendamiento-online/no-hay-horas-disponibles
 title: "El cliente no encuentra horas disponibles"
 description: "Por qué la reserva online muestra pocas horas o ninguna, y qué revisar: horario del barbero, bloqueos, citas, cierres y la opción de cualquier barbero."
 section: agendamiento-online
-order: 140
+order: 240
 group: "Si algo falla"
 roles: [owner, admin, recepcion]
 screens: [/online-booking, /team/barbers, /business-closed]

@@ -3,7 +3,7 @@ id: acceso-y-cuenta/politica-de-privacidad-y-terminos
 title: "Política de privacidad y términos de servicio"
 description: "Dónde está el documento legal de Barberlytics y qué temas cubre."
 section: acceso-y-cuenta
-order: 70
+order: 80
 group: "Entrar"
 roles: [todos]
 screens: [/authenticate]

@@ -3,7 +3,7 @@ id: acceso-y-cuenta/elegir-el-pais-del-telefono
 title: "Elegir el país de tu teléfono"
 description: "Cómo cambiar el código de país del campo Teléfono y qué países están disponibles."
 section: acceso-y-cuenta
-order: 20
+order: 30
 group: "Entrar"
 roles: [todos]
 screens: [/authenticate]

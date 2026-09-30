@@ -3,7 +3,7 @@ id: configuracion/dispositivos-de-pago
 title: "Dispositivos de pago"
 description: "Cómo registrar los datáfonos con los que cobras con tarjeta: nombre, serial, TPN y clave, para elegirlos al cobrar con Crédito/Débito."
 section: configuracion
-order: 60
+order: 80
 group: "Configuración de la cuenta"
 roles: [owner, admin]
 screens: [/devices]

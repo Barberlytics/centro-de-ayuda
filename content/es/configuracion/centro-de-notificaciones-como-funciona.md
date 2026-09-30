@@ -3,7 +3,7 @@ id: configuracion/centro-de-notificaciones-como-funciona
 title: "Centro de notificaciones: cómo funciona"
 description: "Cómo se organiza el Centro de notificaciones: una pestaña por rol, los avisos agrupados por tema y un interruptor por aviso y por canal (Correo o Push)."
 section: configuracion
-order: 150
+order: 170
 group: "Notificaciones"
 roles: [owner, admin]
 screens: [/notifications-center]

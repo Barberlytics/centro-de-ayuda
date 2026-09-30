@@ -3,7 +3,7 @@ id: acceso-y-cuenta/registrar-tu-barberia
 title: "Registrar tu barbería en Barberlytics"
 description: "Cómo crear tu cuenta con el formulario «Empezar ahora»: qué datos pide y qué revisar antes de tocar Enviar."
 section: acceso-y-cuenta
-order: 15
+order: 20
 group: "Entrar"
 roles: [todos]
 screens: [/authenticate/signup]
