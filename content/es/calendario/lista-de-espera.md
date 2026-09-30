@@ -8,7 +8,7 @@ group: "Agendar"
 roles: [owner, admin, recepcion, barbero]
 screens: [/calendar]
 keywords: [lista de espera, no hay hueco, anotar cliente, esperar turno, hueco libre, cancelación, cupo, waitlist, añadir a la lista de espera]
-related: [calendario/crear-una-cita, calendario/conoce-el-calendario, calendario/no-puedo-agendar-a-esta-hora]
+related: [front-desk/atender-la-lista-de-espera, calendario/crear-una-cita, calendario/conoce-el-calendario, calendario/no-puedo-agendar-a-esta-hora]
 status: draft
 updated: 2026-09-25
 ---
@@ -33,8 +33,12 @@ updated: 2026-09-25
 4. Si le sirven varias franjas, toca **Añadir lista de espera** para agregar otra.
 5. Toca **Confirmar**.
 
+## Atender a quien está en la lista
+
+Cada cliente sale en una tarjeta con el servicio, el precio y la etiqueta **Nuevo**. Toca **Ingresar**: se crea su cita a la hora actual en la columna del barbero y queda en **Ingresado**, lista para **Sentar**. Los clientes que se anotan solos en el kiosco de la entrada también llegan aquí: mira [Atender la lista de espera del kiosco](/ayuda/front-desk/atender-la-lista-de-espera).
+
 > [!NOTE]
-> Qué pasa cuando se libera un hueco (si la app avisa o agenda sola) todavía no está documentado.
+> Si la app avisa sola cuando se libera un hueco todavía no está documentado.
 
 ## Preguntas frecuentes
 

@@ -98,6 +98,13 @@
     ]
   },
   {
+    "id": "front-desk",
+    "title": "Front Desk (recepción)",
+    "description": "El kiosco de la entrada: activar la tablet, el check in del cliente, la lista de espera y qué hacer si no encuentra la cita.",
+    "icon": "tablet",
+    "order": 57
+  },
+  {
     "id": "clientes",
     "title": "Clientes",
     "description": "La lista, los tipos de cliente, su ficha, sus notas y cómo bloquearlos.",
