@@ -20,6 +20,7 @@ updated: 2026-09-30
 
 1. Escribe su celular y toca **Check in**.
 2. Sale **Conozcámonos**: «Usaremos esta información para crear tu perfil y hacer la reserva aún más fácil.»
+   ![El panel Conozcámonos con el número ya escrito y los campos Nombre, Apellido y Correo electrónico](/assets/es/front-desk/cliente-nuevo/conozcamonos.png)
 3. El **Número de teléfono** ya viene escrito. Llena **Nombre**, **Apellido** y **Correo electrónico**. Abajo dice «Nunca compartiremos tu información.»
 4. Toca **Continuar**.
 

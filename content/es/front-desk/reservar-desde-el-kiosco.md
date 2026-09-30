@@ -20,6 +20,7 @@ updated: 2026-09-30
 
 1. Toca **Reservar una cita**.
 2. Sigue los pasos de la reserva. Son los mismos que en [Cómo reserva tu cliente](/ayuda/agendamiento-online/como-reserva-tu-cliente).
+   ![La reserva abierta desde el kiosco, con la última visita del cliente preseleccionada y los horarios disponibles](/assets/es/front-desk/reservar-desde-el-kiosco/reserva.png)
 3. La X de arriba cierra la reserva y vuelve a **Bienvenido**.
 
 > [!NOTE]

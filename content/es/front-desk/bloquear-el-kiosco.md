@@ -19,7 +19,9 @@ updated: 2026-09-30
 ## Pasos
 
 1. En la pantalla del kiosco, toca **Bloquear**. No pide confirmación.
+   ![El kiosco activo con el botón Bloquear resaltado abajo a la izquierda](/assets/es/front-desk/bloquear-el-kiosco/botones.png)
 2. Aparece **Recepción**: «Se requiere inicio de sesión del personal para activar el kiosco».
+   ![La pantalla Recepción del kiosco, que pide el celular de alguien del equipo o entrar con Barberlytics](/assets/es/front-desk/activar-el-kiosco/recepcion.png)
 3. Para volver a usarlo, actívalo como la primera vez: [Activar el kiosco en la tablet](/ayuda/front-desk/activar-el-kiosco).
 
 > [!TIP]
