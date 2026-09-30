@@ -1,7 +1,7 @@
 {
   "$comment": "Subgrupos del menú por sección, en orden, con sus artículos en orden. Lo aplica scripts/apply-groups.mjs (escribe `group` y `order` en cada artículo y `groups` en _sections.json). Secciones de 8 artículos o menos no llevan subgrupos.",
   "acceso-y-cuenta": {
-    "Entrar": ["ingresar", "elegir-el-pais-del-telefono", "confirmar-el-codigo", "reenviar-el-codigo", "olvidaste-tu-numero", "contactar-a-soporte-desde-la-entrada", "politica-de-privacidad-y-terminos"],
+    "Entrar": ["ingresar", "registrar-tu-barberia", "elegir-el-pais-del-telefono", "confirmar-el-codigo", "reenviar-el-codigo", "olvidaste-tu-numero", "contactar-a-soporte-desde-la-entrada", "politica-de-privacidad-y-terminos"],
     "Si no puedes entrar": ["codigo-incorrecto-o-vencido", "numero-no-registrado"],
     "Tu cuenta y tus perfiles": ["mi-perfil", "cambiar-de-rol", "tienes-dos-perfiles", "cerrar-sesion"],
     "Tu plan y tus pagos": ["cambiar-mi-plan", "metodos-de-pago-de-tu-plan", "descargar-tus-facturas"]

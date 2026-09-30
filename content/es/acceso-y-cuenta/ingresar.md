@@ -8,7 +8,7 @@ group: "Entrar"
 roles: [todos]
 screens: [/authenticate]
 keywords: [iniciar sesión, entrar, login, ingresar, teléfono, celular, número, sin contraseña, código, acceso, sms]
-related: [acceso-y-cuenta/elegir-el-pais-del-telefono, acceso-y-cuenta/confirmar-el-codigo, acceso-y-cuenta/olvidaste-tu-numero]
+related: [acceso-y-cuenta/registrar-tu-barberia, acceso-y-cuenta/elegir-el-pais-del-telefono, acceso-y-cuenta/confirmar-el-codigo, acceso-y-cuenta/olvidaste-tu-numero]
 status: review
 updated: 2026-09-25
 ---
@@ -55,8 +55,9 @@ que eres tú con un código. No hay contraseña que recordar.
 En esta pantalla no hay contraseña: entras con tu teléfono y confirmas que eres tú con un código que te llega al móvil.
 
 **¿Puedo crear mi cuenta desde aquí?**
-La pantalla de entrada no tiene un botón para crear cuenta. Si aún no tienes acceso, usa el botón de ayuda, abajo a la
-derecha, para escribirnos.
+La pantalla de entrada no tiene un botón para crear cuenta, pero el registro existe: se abre con un enlace aparte.
+Mira [Registrar tu barbería en Barberlytics](/ayuda/acceso-y-cuenta/registrar-tu-barberia). Si eres parte del equipo de una
+barbería, pídele al dueño que te cree en **Equipo**.
 
 **Escribo letras y no pasa nada.**
 Es normal: el campo **Teléfono** solo recibe números.

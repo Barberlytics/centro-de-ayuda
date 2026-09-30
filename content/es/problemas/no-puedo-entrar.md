@@ -7,7 +7,7 @@ order: 10
 roles: [todos]
 screens: [/authenticate, /authenticate/verifyotp, /authenticate/forgot-number]
 keywords: [no puedo entrar, no puedo iniciar sesión, no me llega el código, código incorrecto, número no registrado, el campo es requerido, el campo es muy corto, reenviar código, olvidé mi número, no entra, acceso, login, problema para entrar]
-related: [acceso-y-cuenta/ingresar, acceso-y-cuenta/elegir-el-pais-del-telefono, acceso-y-cuenta/confirmar-el-codigo, acceso-y-cuenta/olvidaste-tu-numero, acceso-y-cuenta/contactar-a-soporte-desde-la-entrada, problemas/como-contactar-a-soporte]
+related: [acceso-y-cuenta/registrar-tu-barberia, acceso-y-cuenta/ingresar, acceso-y-cuenta/elegir-el-pais-del-telefono, acceso-y-cuenta/confirmar-el-codigo, acceso-y-cuenta/olvidaste-tu-numero, acceso-y-cuenta/contactar-a-soporte-desde-la-entrada, problemas/como-contactar-a-soporte]
 status: draft
 updated: 2026-09-25
 ---
@@ -38,7 +38,7 @@ updated: 2026-09-25
 
 ## Lo que no hay
 
-En la entrada no hay contraseña, ni botón de crear cuenta, ni entrada con Google u otra cuenta. Si nunca te han dado acceso, tu dueño tiene que crearte en **Equipo › Acciones › Crear miembro del equipo** con tu celular.
+En la entrada no hay contraseña, ni entrada con Google u otra cuenta, y el botón de crear cuenta no está en esta pantalla: el registro de una barbería nueva está en [Registrar tu barbería en Barberlytics](/ayuda/acceso-y-cuenta/registrar-tu-barberia). Si eres del equipo y nunca te han dado acceso, tu dueño tiene que crearte en **Equipo › Acciones › Crear miembro del equipo** con tu celular.
 
 > [!NOTE]
 > Estos pasos se comprobaron en la pantalla de entrada sin enviar ningún número real. Lo que solo se ve con un celular: el mensaje si el código es incorrecto o vence, cuántos intentos hay, el mensaje si el número no está registrado, qué pasa tras **Reenviar Código** y cuánto tarda el correo de **Olvidaste tu número?**. Se completará cuando se pruebe con un celular.

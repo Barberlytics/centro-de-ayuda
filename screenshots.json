@@ -3920,5 +3920,28 @@
         "wait": 1500
       }
     ]
+  },
+  "acceso-y-cuenta/registrar-tu-barberia/formulario": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "medium",
+    "theme": "light",
+    "route": "/authenticate/signup",
+    "clip": ".section-login"
+  },
+  "acceso-y-cuenta/registrar-tu-barberia/campos-obligatorios": {
+    "source": "produccion",
+    "public": true,
+    "state": "pub-page",
+    "viewport": "medium",
+    "theme": "light",
+    "route": "/authenticate/signup",
+    "clip": ".section-login",
+    "steps": [
+      {
+        "clickText": "Enviar"
+      }
+    ]
   }
 }
