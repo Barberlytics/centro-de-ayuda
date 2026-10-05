@@ -38,7 +38,7 @@ updated: 2026-09-25
 
 ## Lo que no hay
 
-En la entrada no hay contraseña, ni entrada con Google u otra cuenta, y el botón de crear cuenta no está en esta pantalla: el registro de una barbería nueva está en [Registrar tu barbería en Barberlytics](/ayuda/acceso-y-cuenta/registrar-tu-barberia). Si eres del equipo y nunca te han dado acceso, tu dueño tiene que crearte en **Equipo › Acciones › Crear miembro del equipo** con tu celular.
+En la entrada no hay contraseña y el botón de crear cuenta no está en esta pantalla: el registro de una barbería nueva está en [Registrar tu barbería en Barberlytics](/ayuda/acceso-y-cuenta/registrar-tu-barberia). Si eres del equipo y nunca te han dado acceso, tu dueño tiene que crearte en **Equipo › Acciones › Crear miembro del equipo** con tu celular.
 
 > [!NOTE]
 > Estos pasos se comprobaron en la pantalla de entrada sin enviar ningún número real. Lo que solo se ve con un celular: el mensaje si el código es incorrecto o vence, cuántos intentos hay, el mensaje si el número no está registrado, qué pasa tras **Reenviar Código** y cuánto tarda el correo de **Olvidaste tu número?**. Se completará cuando se pruebe con un celular.
