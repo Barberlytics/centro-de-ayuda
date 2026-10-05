@@ -25,7 +25,7 @@ la validación del navegador, que no envía nada.
 
 ## Lo que no hay en esta pantalla
 
-Contraseña · botón «Crear cuenta» · entrada con Google, Outlook u otra cuenta.
+Contraseña · botón «Crear cuenta».
 
 ## Pendiente de confirmar con un celular real (lo hace el usuario)
 
