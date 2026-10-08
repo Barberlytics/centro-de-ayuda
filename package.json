@@ -12,7 +12,9 @@
     "shots:install": "playwright install chromium",
     "shots:login": "node scripts/prod-login.mjs",
     "plan": "node scripts/plan.mjs",
-    "groups": "node scripts/apply-groups.mjs"
+    "groups": "node scripts/apply-groups.mjs",
+    "check:translation": "node scripts/check-translation.mjs en",
+    "align-links": "node scripts/align-link-titles.mjs en"
   },
   "dependencies": {
     "gray-matter": "^4.0.3"
