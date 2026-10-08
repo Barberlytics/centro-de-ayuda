@@ -10,7 +10,8 @@ Aquí **solo vive el contenido**. La interfaz que lo muestra vive en el repo de 
 ## Cómo está organizado
 
 ```
-content/es/                 ← un idioma por carpeta; inglés después con la misma estructura
+content/es/                 ← la fuente, en español
+content/en/                 ← la traducción al inglés: mismos archivos y mismos id (ver TRANSLATING.md)
   _sections.json            ← las secciones, en orden, con título y descripción
   <seccion>/<articulo>.md   ← un artículo = un archivo con frontmatter
 assets/es/<seccion>/<articulo>/<captura>.png
@@ -31,6 +32,8 @@ npm run serve      # sirve dist/ en http://localhost:8787 con CORS, para probar 
 npm run shots      # regenera las capturas (necesita la app corriendo; ver abajo)
 npm run groups     # aplica los subgrupos del menú de scripts/lib/groups.json (group y order de cada artículo)
 npm run plan       # regenera PLAN.md desde plan/plan.json
+npm run check:translation  # compara cada artículo en inglés con su original (ids, capturas, enlaces, grupos)
+npm run align-links        # pone a los enlaces del inglés el título traducido de su destino
 ```
 
 **Subgrupos del menú.** Las secciones grandes reparten sus artículos en subgrupos («Agendar», «Cobrar y vender»…)
@@ -70,6 +73,14 @@ Cada push a `main` construye `dist/` y lo publica en GitHub Pages. La aplicació
 - `articles/<seccion>/<articulo>.md` — el cuerpo de cada artículo
 - `assets/…` — las capturas
 - `llms.txt` y `llms-full.txt` — la base completa para un agente de IA
+- `en/…` — lo mismo en inglés (sin `assets/`, que son compartidos). Un artículo sin traducir sale
+  ahí en español, con `locale: "es"` en el índice
+
+## Idiomas
+
+El español es la fuente. Al escribir o cambiar un artículo en `content/es/`, tradúcelo en
+`content/en/` con las reglas de `TRANSLATING.md`; hasta entonces sale en español en el índice
+inglés y `npm run check` lo avisa como «sin traducir».
 
 ## Escribir un artículo
 

@@ -1,0 +1,217 @@
+[
+  {
+    "id": "empezar",
+    "title": "Getting started",
+    "description": "What Barberlytics is, the first steps and a guide for each role.",
+    "icon": "rocket",
+    "order": 10
+  },
+  {
+    "id": "acceso-y-cuenta",
+    "title": "Access and account",
+    "description": "Signing in, recovering your number, signing out, your profile and your plan.",
+    "icon": "key",
+    "order": 20,
+    "groups": [
+      "Signing in",
+      "If you can't get in",
+      "Your account and your profiles",
+      "Your plan and your payments"
+    ]
+  },
+  {
+    "id": "sucursales",
+    "title": "Locations",
+    "description": "Company and locations: what belongs to each one, what is shared and how the team and catalog are activated in each location.",
+    "icon": "store",
+    "order": 25,
+    "groups": [
+      "How it works",
+      "Create and manage",
+      "Activate team and catalogs",
+      "If something doesn't show up"
+    ]
+  },
+  {
+    "id": "roles-y-permisos",
+    "title": "Roles and permissions",
+    "description": "The five roles, the profiles, what each one can do and see, and how permissions are adjusted.",
+    "icon": "shield",
+    "order": 27,
+    "groups": [
+      "How it works",
+      "What each role can do",
+      "Change permissions",
+      "If something doesn't show up"
+    ]
+  },
+  {
+    "id": "navegacion",
+    "title": "Getting around the app",
+    "description": "The menu sections, the location, notifications, language and dark mode.",
+    "icon": "compass",
+    "order": 30
+  },
+  {
+    "id": "metricas",
+    "title": "Metrics",
+    "description": "How your barbershop is doing: business, clients, barbers, marketing and recommendations.",
+    "icon": "gauge",
+    "order": 40,
+    "groups": [
+      "How to read Metrics",
+      "Business",
+      "Clients",
+      "Barbers and marketing",
+      "AI Insights"
+    ]
+  },
+  {
+    "id": "calendario",
+    "title": "Calendar",
+    "description": "Book, charge, move and cancel appointments; walk-ins, quick sales and online bookings.",
+    "icon": "calendar",
+    "order": 50,
+    "groups": [
+      "Get to know the calendar",
+      "Book",
+      "Serve an appointment",
+      "Charge and sell",
+      "Blocks and vacations",
+      "If something goes wrong"
+    ]
+  },
+  {
+    "id": "agendamiento-online",
+    "title": "Online booking",
+    "description": "How your clients book online, step by step, and how to put booking on your website, your link and your social media.",
+    "icon": "globe",
+    "order": 55,
+    "groups": [
+      "How it works",
+      "How your client books",
+      "Payment and confirmation",
+      "Take booking to your channels",
+      "Online booking settings",
+      "Client portal",
+      "If something goes wrong"
+    ]
+  },
+  {
+    "id": "front-desk",
+    "title": "Front Desk (reception)",
+    "description": "The kiosk at the entrance: setting up the tablet, client check-in, the waitlist and what to do if the appointment cannot be found.",
+    "icon": "tablet",
+    "order": 57
+  },
+  {
+    "id": "clientes",
+    "title": "Clients",
+    "description": "The list, client types, their record, their notes and how to block them.",
+    "icon": "users",
+    "order": 60,
+    "groups": [
+      "The client list",
+      "Client types",
+      "A client's record",
+      "If something goes wrong"
+    ]
+  },
+  {
+    "id": "servicios",
+    "title": "Services",
+    "description": "Categories, services and combos, with their prices.",
+    "icon": "scissors",
+    "order": 70,
+    "groups": [
+      "How it works",
+      "Create and edit",
+      "What the client sees when booking"
+    ]
+  },
+  {
+    "id": "productos",
+    "title": "Products",
+    "description": "What you sell at the barbershop, with its price and inventory.",
+    "icon": "package",
+    "order": 80,
+    "groups": [
+      "How it works",
+      "Create and edit",
+      "Sell"
+    ]
+  },
+  {
+    "id": "equipo",
+    "title": "Team",
+    "description": "Barbers, levels, schedules, managers and each person's record.",
+    "icon": "team",
+    "order": 90,
+    "groups": [
+      "How it works",
+      "Add someone",
+      "A barber's record",
+      "Edit, deactivate or delete",
+      "Schedules, levels and order"
+    ]
+  },
+  {
+    "id": "gastos",
+    "title": "Expenses",
+    "description": "What the barbershop spends, fixed or variable.",
+    "icon": "receipt",
+    "order": 100
+  },
+  {
+    "id": "nomina",
+    "title": "Payroll",
+    "description": "How each barber is paid and how to read each column.",
+    "icon": "wallet",
+    "order": 110,
+    "groups": [
+      "How it works",
+      "Reading payroll",
+      "If something doesn't add up"
+    ]
+  },
+  {
+    "id": "transacciones",
+    "title": "Transactions",
+    "description": "Everything charged and everything still pending.",
+    "icon": "swap",
+    "order": 120,
+    "groups": [
+      "How to read Transactions",
+      "Search and review",
+      "If something goes wrong"
+    ]
+  },
+  {
+    "id": "configuracion",
+    "title": "Settings",
+    "description": "Every barbershop setting, one by one.",
+    "icon": "settings",
+    "order": 130,
+    "groups": [
+      "Account settings",
+      "Team",
+      "Sales",
+      "Notifications",
+      "Delete account"
+    ]
+  },
+  {
+    "id": "glosario",
+    "title": "Glossary",
+    "description": "Every Barberlytics word explained in one sentence.",
+    "icon": "book",
+    "order": 140
+  },
+  {
+    "id": "problemas",
+    "title": "Common problems",
+    "description": "I can't get in, a number doesn't add up, and what to do.",
+    "icon": "lifebuoy",
+    "order": 150
+  }
+]
