@@ -15,7 +15,9 @@ content/en/                 ← la traducción al inglés: mismos archivos y mis
   _sections.json            ← las secciones, en orden, con título y descripción
   <seccion>/<articulo>.md   ← un artículo = un archivo con frontmatter
 assets/es/<seccion>/<articulo>/<captura>.png
+assets/en/…                 ← las mismas capturas con producción en inglés
 screenshots.json            ← la receta de cada captura: ruta, estado, viewport, tema
+screenshots.en.json         ← los textos que buscan las recetas, en español → como salen en inglés
 casos/produccion.md         ← el mapa de la app en producción: rutas, pestañas, acciones, textos
 STYLE.md                    ← cómo se escribe aquí
 scripts/build.mjs           ← md → dist/ (index.json, search.json, artículos, llms.txt)
@@ -58,7 +60,13 @@ npm run shots:install                    # una vez: descarga Chromium
 npm run shots:login                      # inicias sesión TÚ en la ventana; guarda .auth/prod.json
 npm run shots                            # todas
 npm run shots -- acceso-y-cuenta         # solo una sección
+npm run shots -- --locale=en             # las mismas en inglés, en assets/en
 ```
+
+En inglés se usa la misma sesión: el script pone producción en inglés solo en su navegador (sin
+tocar la cuenta) y traduce los textos que buscan las recetas con `screenshots.en.json`. El build
+cambia en cada artículo en inglés `/assets/es/…` por `/assets/en/…` cuando esa captura existe; la
+que falte se ve en español.
 
 `.auth/` y `.mask.local.json` no se suben al repo. Sin `.mask.local.json` las capturas de
 producción se niegan a salir. Correos y teléfonos se enmascaran solos; los nombres los cambia el
@@ -71,9 +79,9 @@ Cada push a `main` construye `dist/` y lo publica en GitHub Pages. La aplicació
 - `index.json` — secciones, artículos y sus metadatos, mapa pantalla → artículos
 - `search.json` — el índice de búsqueda
 - `articles/<seccion>/<articulo>.md` — el cuerpo de cada artículo
-- `assets/…` — las capturas
+- `assets/es/…` y `assets/en/…` — las capturas de cada idioma
 - `llms.txt` y `llms-full.txt` — la base completa para un agente de IA
-- `en/…` — lo mismo en inglés (sin `assets/`, que son compartidos). Un artículo sin traducir sale
+- `en/…` — lo mismo en inglés (las capturas siguen en `assets/en/`). Un artículo sin traducir sale
   ahí en español, con `locale: "es"` en el índice
 
 ## Idiomas

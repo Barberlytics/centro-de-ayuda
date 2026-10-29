@@ -8,8 +8,9 @@
  */
 export const BRANCH = process.env.HELP_BRANCH ?? "mugen barber 2";
 
-export async function chooseBranch(page, branch = BRANCH) {
-  const chooser = page.getByText("Por favor seleccione una sucursal");
+/** `prompt`: el texto del aviso en el idioma de la captura. */
+export async function chooseBranch(page, branch = BRANCH, prompt = "Por favor seleccione una sucursal") {
+  const chooser = page.getByText(prompt);
   if (!(await chooser.isVisible().catch(() => false))) return false;
   // El mismo nombre está en la cabecera y en tablas (columna Sucursal): solo cuenta el del modal.
   await page.locator(".centralmodal-overlay").getByText(branch, { exact: true }).first().click();
