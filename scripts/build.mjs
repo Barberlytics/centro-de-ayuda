@@ -5,7 +5,8 @@
  *   dist/index.json                     secciones, artículos, mapa pantalla → artículos
  *   dist/search.json                    índice de búsqueda (texto plano por artículo)
  *   dist/articles/<seccion>/<id>.md     el cuerpo sin frontmatter
- *   dist/assets/**                      las capturas (compartidas por todos los idiomas)
+ *   dist/assets/<idioma>/**             las capturas; una traducción usa las de su
+ *                                       idioma y, la que falte, la del español
  *   dist/llms.txt · dist/llms-full.txt  la base para un agente
  *   dist/<idioma>/…                     lo mismo en cada traducción (sin assets)
  *
@@ -60,6 +61,14 @@ const manifestPath = path.join(ROOT, "screenshots.json");
 const manifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, "utf8")) : {};
 
 const shotKey = (src) => src.replace(/^\/assets\/[a-z]{2}\//, "").replace(/\.png$/, "");
+
+/**
+ * Las traducciones escriben las rutas del español (`/assets/es/…`, ver TRANSLATING.md).
+ * Al publicar se cambian por las del idioma cuando esa captura ya está tomada
+ * (`npm run shots -- --locale=en`); si no, se queda la del español.
+ */
+const localizeImages = (content, locale) =>
+  content.replace(/\/assets\/es\/([^\s)"]+)/g, (src, rest) => (fs.existsSync(path.join(ASSETS, locale, rest)) ? `/assets/${locale}/${rest}` : src));
 /** Lo que cambia de un idioma a otro en los textos que genera el build. */
 const COPY = {
   es: {
@@ -141,7 +150,7 @@ function readArticles(locale, sections) {
     const plain = toPlainText(content.replace(/^\s*#\s+.+\n+/, ""));
     articles.push({
       file: where,
-      body: content,
+      body: hasTranslation ? localizeImages(content, locale) : content,
       plain,
       meta: {
         id: expectedId,

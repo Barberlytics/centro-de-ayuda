@@ -1,0 +1,251 @@
+{
+  "$comment": "Textos de la pantalla que usan las recetas de screenshots.json (en selectores, clickText y el propio script), en español → como salen en producción en inglés. Sale del diccionario de traducciones de dash.barberlytics.com. Una lista son variantes que producción usa para el mismo texto: vale cualquiera. Lo que no está aquí (nombres, datos, textos que producción no traduce) se busca igual que en español. `selectors`: selectores completos que no se dejan traducir texto a texto (p. ej. una expresión con los meses en español). `clickTexts`: para `clickText`, cuando la traducción general también existe en otro lugar de la pantalla (la pestaña «Barber rent» tapa la opción «Barber by rent» del formulario).",
+  "texts": {
+    "% de propinas": "Tips %",
+    "Abrir checkout completo": "Open full checkout",
+    "Abrir desde enlace": "Open from your own link",
+    "Abrir desde un enlace": "Open from a link",
+    "Acciones": "Actions",
+    "Activar equipo dentro de esta sucursal": "Activate team in this location",
+    "Activar productos de barbería": "Activate barbershop products",
+    "Activar servicios": "Activate services",
+    "Administrador de la locación": [
+      "Location admin",
+      "Location Admin",
+      "Location manager",
+      "Manager"
+    ],
+    "Administrar métodos de pago": "Manage payment methods",
+    "Agenda": "Agenda",
+    "Agregar dispositivo": "Add device",
+    "Agregar nota": "Add note",
+    "AI Insights": "AI Insights",
+    "Alertas de Riesgo": "Client Risk Alerts",
+    "Aplicar": "Apply",
+    "Aumento de precios": "Surge pricing",
+    "Avanzado": [
+      "Advanced",
+      "Avanced"
+    ],
+    "Añadir a la lista de espera": "Add to wailist",
+    "Añadir impuesto": "Add tax",
+    "Añadir periodo cerrado": "Add closed period",
+    "Añadir una Restriccion de Tiempo": "Add Restrictions Time",
+    "Barbero": "Barber",
+    "Barbero de renta": [
+      "Barber by rent",
+      "Barber rent"
+    ],
+    "Barbero por comisión": [
+      "Barber by commission",
+      "Barber commission"
+    ],
+    "Barbero por renta": "Barber by rent",
+    "Barbero por salario": "Barber salary",
+    "Barbero renta": "Barber rent",
+    "Barberos": "Barbers",
+    "Bloquear cliente": "Block client",
+    "Bloqueo": "Block",
+    "Calendario": [
+      "Calendar",
+      "Schedule"
+    ],
+    "Canales digitales": "Digital channels",
+    "Cancelación y reprogramación en línea": "Online cancellation and rescheduling",
+    "Categorías": [
+      "Category of services",
+      "Categories"
+    ],
+    "Cerrar Sesión": "Logout",
+    "Citas": [
+      "Appointments",
+      "Appointment",
+      "Appoiments",
+      "bookings"
+    ],
+    "Citas por tipo de cliente": "Appointments by type of client",
+    "Cliente": [
+      "Customer",
+      "Client"
+    ],
+    "Clientes": [
+      "Customers",
+      "Clients",
+      "Client"
+    ],
+    "Combos": "Combos",
+    "Compensación": "Compensation",
+    "Confirmar": "Confirm",
+    "Continuar": [
+      "Continue",
+      "Next"
+    ],
+    "Conversión por canal": "Conversion by Channel",
+    "Crear": "Create",
+    "Crear bloque de tiempo": "Create block time",
+    "Crear Categoría": "Create Category",
+    "Crear categoría": "Create Category",
+    "Crear cita": [
+      "Create appointment",
+      "Create appoiment"
+    ],
+    "Crear cliente": "Create client",
+    "Crear combo": "Create combo",
+    "Crear gasto fijo": "Create fixed expense",
+    "Crear gasto variable": "Create variable expense",
+    "Crear miembro del equipo": [
+      "Create team member",
+      "Create member"
+    ],
+    "Crear nivel": "Create Level",
+    "Crear nota": "Create note",
+    "Crear Sucursal": "Create Location",
+    "Crear venta rapida": "Create quick sale",
+    "Dentro de una página": "Inside a page",
+    "Descargar": "Download",
+    "Descuentos": "Discounts",
+    "Dia": "Day",
+    "Dia anterior": "Previous day",
+    "Disponibilidad de reserva online": "Online booking availability",
+    "Distribución de pagos": "Distribution of payments",
+    "Dueño": "Owner",
+    "Editar": "Edit",
+    "Editar Barbero por comisión": "Edit Barber commission",
+    "Editar este día": "Edit this day",
+    "Elige fecha": "Choose date",
+    "Eliminar": "Delete",
+    "Eliminar cuenta": "Delete Account",
+    "Enlace de Front Desk": "Front Desk Link",
+    "Enlace directo": "Direct link",
+    "Enlaces en línea": "Online links",
+    "Enviar": [
+      "Submit",
+      "Send"
+    ],
+    "Enviar correo": "Send mail",
+    "Equipo": "Team",
+    "FACTURADO": "Billed",
+    "Fecha": "Date",
+    "Fecha & Hora": "Date & Time",
+    "Filtros": "Filters",
+    "Frecuencia de visita": "Visit Frequency",
+    "Frecuente": "Repeat",
+    "Gerentes": [
+      "Team Managers",
+      "Managers"
+    ],
+    "Historial": "History",
+    "Horas de solicitud": "Appointments request time",
+    "Horas de trabajo": "Working hours",
+    "Hoy": "Today",
+    "Información importante": "Important information",
+    "Ingreso promedio": "Avg. income per client",
+    "Ingresos": [
+      "Revenue",
+      "Income"
+    ],
+    "Iniciar Sesión": "Login",
+    "Lealtad al barbero": "Barber loyalty",
+    "Link de reserva online para tu sitio web": "Online booking link for your website",
+    "Lista de cobros": "Checkout list",
+    "Lista de espera": "Waitlist",
+    "Lista de gastos fijos": "Fixed expenses list",
+    "Lista de miembros": "List of members",
+    "lista de productos": "list of products",
+    "Lista de sucursales": "List of locations",
+    "Listado de Barberos": "list of barbers",
+    "Listado de servicios": "Services list",
+    "Mapa de Capacidad": "Capacity Heatmap",
+    "Marketing": "Marketing",
+    "Mejor canal": "Best channel",
+    "Mes": "Month",
+    "Metodo de agendamiento": "Scheduling method",
+    "Miembro": "Barber",
+    "Modo oscuro": "Dark mode",
+    "Más": "More",
+    "Métodos de pago": [
+      "Payment Methods",
+      "Payment method"
+    ],
+    "Métodos de pago aceptados": "Accepted Payment Methods",
+    "Niveles": "Levels",
+    "Notas": "Notes",
+    "Notas del cliente": "Client notes",
+    "Notificaciones": "Notifications",
+    "Nuevo": "New",
+    "Nuevos vs recurrentes": "New vs Returning",
+    "Opciones": "Options",
+    "Orden de agendamiento": "Booking line up",
+    "Ordenamiento para agendamiento sin cita y sin preferencia": "Walk-in & no preference line up",
+    "Ordenar barberos": "Booking line up",
+    "Pagado": "Paid",
+    "Pagar cita": "Pay appointment",
+    "Pagos": "Payments",
+    "Panel lateral": "Side panel",
+    "Perdido": "Churn",
+    "Perfil": "Profile",
+    "Permisos": "Permissions",
+    "Por favor seleccione una sucursal": [
+      "Please select an Location",
+      "Please select a location"
+    ],
+    "Pre-perdida": "Pre-churn",
+    "Preferencia de barbero": "Barber preference",
+    "Productos": "Products",
+    "Puntaje de Salud": "Health Score",
+    "Qué puede hacer tu cliente": "What your client can do",
+    "Rate walk-in": "Walk-in rate",
+    "Recepcionista": [
+      "Reception - front desk's profile",
+      "Reception - front desk",
+      "Receptionist",
+      "Front desk"
+    ],
+    "Recepción - mostrador de recepción": "Reception - front desk",
+    "Recomendaciones Inteligentes": "Smart Suggestions",
+    "Recuperado": "Recovered",
+    "Reembolsos": "Refunds",
+    "Rendimiento de campañas": "Campaign Performance",
+    "Reserva embebida": "Inline booking",
+    "Reservas online": "Online bookings",
+    "Retenido": "Retention",
+    "Semana": "Week",
+    "Servicio": "Service",
+    "Servicios": "Services",
+    "Siguiente": "Next",
+    "Sin preferencia": [
+      "No preference line up",
+      "No preference"
+    ],
+    "Tasa de cancelación": "Cancellation rate",
+    "Tasa de retención": "Retention rate",
+    "Ticket promedio": "Average ticket",
+    "Total de citas": "Total appointments",
+    "Total neto del equipo": "Total net team",
+    "Total neto del equipo ·": "Total net team",
+    "Trabajando": "Working",
+    "Transacciones": "Transactions",
+    "Tráfico según la hora del día": "Traffic Distribution by Time of Day",
+    "Variables": "Variable",
+    "Venta sin cita": "Walk-in sale",
+    "Ventas": "Sales",
+    "Ventas de productos": "Sales by products",
+    "Ventas físicas": "Physical sales",
+    "Ventas por servicio": "Sales for service",
+    "Ver": "View",
+    "Ver Barbero de renta": [
+      "View Barber rent",
+      "View Barber by rent"
+    ],
+    "Ver Barbero por comisión": "View Barber commission",
+    "VIP": "VIP",
+    "Vista previa de políticas de programación y cancelación": "Preview scheduling and cancellation policies",
+    "Última cita": "Last appointment"
+  },
+  "selectors": {
+    ".containerFilterDahsboar >> text=/^[a-záéíóú]+ 20\\d\\d$/ >> xpath=..": ".containerFilterDahsboar >> text=/^[A-Za-z]+ 20\\d\\d$/ >> xpath=.."
+  },
+  "clickTexts": {
+    "Barbero de renta": "Barber by rent"
+  }
+}

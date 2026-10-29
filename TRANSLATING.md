@@ -21,7 +21,8 @@ Un artículo que aún no tiene traducción sale en español dentro del índice i
 - El `# Título` es idéntico a `title`.
 - `keywords`: las palabras con que alguien lo buscaría **en inglés** (no traducción palabra a palabra).
   Al menos tantas como el original.
-- Las capturas siguen siendo las de la app en español: no se cambia la ruta, solo el `alt`.
+- Las rutas de las capturas se dejan en español (`/assets/es/…`), solo se traduce el `alt`. Al publicar,
+  el build las cambia por la captura en inglés (`assets/en/`, `npm run shots -- --locale=en`) si existe.
 - Nombres de ejemplo (Carlos, Laura, «Mi Barbería», «Sucursal Norte») se quedan como están, porque
   salen así en las capturas. Montos, monedas, fechas y teléfonos de ejemplo, igual.
 

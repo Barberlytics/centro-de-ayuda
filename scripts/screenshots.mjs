@@ -12,6 +12,8 @@
  *   npm run shots:login                 (una vez: inicias sesión tú)
  *   npm run shots                       todas
  *   npm run shots -- acceso-y-cuenta    solo las claves que empiecen así
+ *   npm run shots -- --locale=en        las mismas, con producción en inglés,
+ *                                       en assets/en (textos: screenshots.en.json)
  *
  * Las capturas de producción se niegan a salir si falta `.mask.local.json`
  * (ver `.mask.example.json`): en producción hay personas reales.
@@ -27,10 +29,45 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const APP_URL = (process.env.HELP_APP_URL ?? "http://localhost:5197").replace(/\/+$/, "");
 const PROD_URL = (process.env.HELP_PROD_URL ?? "https://dash.barberlytics.com").replace(/\/+$/, "");
 const AUTH_FILE = path.join(ROOT, ".auth", "prod.json");
-const LOCALE = "es";
 const args = process.argv.slice(2);
+const LOCALE = args.find((arg) => arg.startsWith("--locale="))?.slice("--locale=".length) ?? "es";
 const noMask = args.includes("--no-mask");
 const filter = args.filter((arg) => !arg.startsWith("-"));
+
+/**
+ * Las recetas buscan la pantalla por sus textos en español. En otro idioma se
+ * traducen con `screenshots.<idioma>.json`; lo que no está ahí (nombres, datos,
+ * lo que producción no traduce) se busca tal cual. Una lista son variantes.
+ */
+const { texts: TEXTS = {}, clickTexts: CLICK_TEXTS = {}, selectors: SELECTORS = {} } = LOCALE === "es" ? {} : JSON.parse(fs.readFileSync(path.join(ROOT, `screenshots.${LOCALE}.json`), "utf8"));
+const escapeRegex = (value) => value.replace(/[.*+?^${}()|[\]\\/]/g, "\\$&");
+const variants = (text) => [TEXTS[text] ?? text].flat();
+/** Una pseudoclase o atributo por variante; con varias, `:is(…)` acepta cualquiera. */
+const anyOf = (options) => (options.length === 1 ? options[0] : `:is(${options.join(", ")})`);
+
+/** Para `getByText(…, { exact: true })`: el texto, o una expresión con sus variantes. */
+function exactText(text) {
+  const options = variants(text);
+  return options.length === 1 && options[0] === text ? text : new RegExp(`^\\s*(?:${options.map(escapeRegex).join("|")})\\s*$`, "i");
+}
+
+/**
+ * Traduce los textos de un selector de Playwright: `text=…`, `:has-text("…")`,
+ * `:text-is("…")`, `:text-matches("^\\s*…")` y `[aria-label|title(^)='…']`.
+ * Lo que no se deja traducir así va entero en `selectors`.
+ */
+function localize(selector) {
+  if (LOCALE === "es" || !selector) return selector;
+  if (SELECTORS[selector]) return SELECTORS[selector];
+  return selector
+    .replace(/text=(?!\/)(.+?)(?= >> |$)/g, (_, text) => {
+      const options = variants(text);
+      return options.length === 1 ? `text=${options[0]}` : `text=/${options.map(escapeRegex).join("|")}/i`;
+    })
+    .replace(/:(has-text|text-is)\((['"])(.+?)\2\)/g, (_, pseudo, quote, text) => anyOf(variants(text).map((option) => `:${pseudo}(${JSON.stringify(option)})`)))
+    .replace(/:text-matches\("\^\\\\s\*([^"]+)"/g, (_, text) => `:text-matches("^\\\\s*(?:${variants(text).map(escapeRegex).join("|")})"`)
+    .replace(/\[(aria-label|title)(\^?=)'([^']+)'\]/g, (_, attr, op, text) => anyOf(variants(text).map((option) => `[${attr}${op}${JSON.stringify(option)}]`)));
+}
 
 // `tall` es para páginas largas: la app hace scroll dentro de un contenedor y fullPage no las alcanza.
 const VIEWPORTS = { desktop: { width: 1280, height: 800 }, tall: { width: 1280, height: 2400 }, medium: { width: 1280, height: 1300 }, mobile: { width: 390, height: 844 } };
@@ -41,12 +78,14 @@ const headerToggle = (page, index) => page.locator(".actions-dashboard > div.dro
 
 async function prodPage(page, recipe) {
   await page.goto(`${PROD_URL}${recipe.route}`);
-  await page.locator(".actions-dashboard").waitFor();
+  // Métricas pinta más de una barra de acciones: basta con la primera.
+  await page.locator(".actions-dashboard").first().waitFor();
   // El calendario consulta sin parar: si la red no se calma en 8 s, seguimos.
   await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
   await page.waitForTimeout(1200);
   // La sesión guardada arranca sin sucursal elegida; la receta puede pedir otra.
-  if (!recipe.keepBranchChooser && (await chooseBranch(page, recipe.branch))) {
+  const branchPrompt = new RegExp(variants("Por favor seleccione una sucursal").map(escapeRegex).join("|"), "i");
+  if (!recipe.keepBranchChooser && (await chooseBranch(page, recipe.branch, branchPrompt))) {
     await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
   }
   await runSteps(page, recipe.steps);
@@ -62,13 +101,13 @@ async function prodPage(page, recipe) {
 async function runSteps(page, steps = []) {
   for (const step of steps) {
     // `force: true` salta la comprobación de que nada tape el elemento (capas decorativas).
-    if (step.click) await page.locator(step.click).first().click({ force: Boolean(step.force) });
-    else if (step.clickText) await page.getByText(step.clickText, { exact: true }).locator("visible=true").first().click();
+    if (step.click) await page.locator(localize(step.click)).first().click({ force: Boolean(step.force) });
+    else if (step.clickText) await page.getByText(exactText(CLICK_TEXTS[step.clickText] ?? step.clickText), { exact: true }).locator("visible=true").first().click();
     // Un valor `$NOMBRE` se lee de una variable de entorno: así un celular real nunca queda en el repo.
-    else if (step.fill) await page.locator(step.fill[0]).first().fill(step.fill[1].replace(/^\$(\w+)$/, (_, name) => process.env[name] ?? ""));
-    else if (step.select) await page.locator(step.select[0]).first().selectOption(step.select[1], { force: Boolean(step.force) });
-    else if (step.hover) await page.locator(step.hover).first().hover();
-    else if (step.scrollTo) await page.locator(step.scrollTo).first().scrollIntoViewIfNeeded();
+    else if (step.fill) await page.locator(localize(step.fill[0])).first().fill(step.fill[1].replace(/^\$(\w+)$/, (_, name) => process.env[name] ?? ""));
+    else if (step.select) await page.locator(localize(step.select[0])).first().selectOption(step.select[1], { force: Boolean(step.force) });
+    else if (step.hover) await page.locator(localize(step.hover)).first().hover();
+    else if (step.scrollTo) await page.locator(localize(step.scrollTo)).first().scrollIntoViewIfNeeded();
     await page.waitForTimeout(step.wait ?? 500);
   }
 }
@@ -121,7 +160,7 @@ const STATES = {
   "prod-notifications": async (page, recipe) => {
     await prodPage(page, recipe);
     await page.locator(".actions-dashboard > .MuiBadge-root").nth(1).click();
-    await page.getByText("Notificaciones", { exact: true }).first().waitFor();
+    await page.getByText(exactText("Notificaciones"), { exact: true }).first().waitFor();
     await page.waitForTimeout(800);
   },
 };
@@ -140,7 +179,7 @@ async function shoot(browser, key, recipe, theme, mask) {
   const viewport = VIEWPORTS[recipe.viewport ?? "desktop"];
   const context = await browser.newContext({
     viewport,
-    locale: "es-CO",
+    locale: LOCALE === "es" ? "es-CO" : LOCALE === "en" ? "en-US" : LOCALE,
     colorScheme: theme,
     deviceScaleFactor: 2,
     reducedMotion: "reduce",
@@ -148,6 +187,8 @@ async function shoot(browser, key, recipe, theme, mask) {
   });
   const page = await context.newPage();
   try {
+    // Producción guarda el idioma en el navegador (`language`): se cambia aquí, sin tocar la cuenta.
+    await page.addInitScript((language) => window.localStorage.setItem("language", language), LOCALE);
     if (!isProd) {
       await page.addInitScript((mode) => window.localStorage.setItem("thema-theme", JSON.stringify({ mode })), theme);
     }
@@ -156,13 +197,13 @@ async function shoot(browser, key, recipe, theme, mask) {
     await state(page, recipe);
     // También en páginas públicas: la reserva online muestra el nombre y el teléfono de la sucursal.
     if (mask) await applyMask(page, mask, recipe.blur);
-    if (recipe.highlight) await highlight(page, recipe.highlight);
+    if (recipe.highlight) await highlight(page, localize(recipe.highlight));
     const suffix = recipe.theme === "both" && theme === "dark" ? "-oscuro" : "";
     const target = path.join(ROOT, "assets", LOCALE, `${key}${suffix}.png`);
     fs.mkdirSync(path.dirname(target), { recursive: true });
     if (recipe.clip) {
       // La app hace scroll en un contenedor interno: se trae el elemento a la vista antes de medirlo.
-      const element = page.locator(recipe.clip).first();
+      const element = page.locator(localize(recipe.clip)).first();
       await element.scrollIntoViewIfNeeded();
       await page.waitForTimeout(300);
       const box = await element.boundingBox();
